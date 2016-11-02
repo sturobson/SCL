@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FOUC beater -->
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+    <link media="all" rel="stylesheet" href="{{ path '/css/styles.css' }}">
+    <title>{{ _target.title }} | Simple Component Lubrary</title>
+</head>
+<body>
+
+{{{ yield }}}
+
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="{{ path '/javascript/scripts.js'}}"></script>
+</html>
