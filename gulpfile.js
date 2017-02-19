@@ -19,12 +19,13 @@ const concat            = require('gulp-concat');
 const browserSync       = require('browser-sync').create();
 const reload            = browserSync.reload;
 const connect           = require('gulp-connect');
+const backstopjs        = require('backstopjs');
 
 // Housekeeping
 
 const fractal           = require('./fractal.js');
 const logger            = fractal.cli.console;
-const backstopjs = require('backstopjs');
+
 
 
 // -----------------------------------------------------------------------------
