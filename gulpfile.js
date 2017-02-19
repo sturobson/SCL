@@ -18,11 +18,14 @@ const concat            = require('gulp-concat');
 // Local Server Stuff
 const browserSync       = require('browser-sync').create();
 const reload            = browserSync.reload;
+const connect           = require('gulp-connect');
 
 // Housekeeping
 
 const fractal           = require('./fractal.js');
 const logger            = fractal.cli.console;
+const backstopjs = require('backstopjs');
+
 
 // -----------------------------------------------------------------------------
 // Configuration
@@ -91,7 +94,11 @@ gulp.task('watchJS', function(done) {
   done();
 });
 
-
+var backstopConfig = {
+  //Config file location
+  config: './backstopConfig.js'
+  //incremental reference image capturing
+}
 
 // -----------------------------------------------------------------------------
 // Default Tasks
@@ -101,3 +108,18 @@ gulp.task('watchJS', function(done) {
 gulp.task('watch', gulp.parallel('watchCSS', 'watchJS'));
 
 gulp.task('dev', gulp.parallel('frctlStart', 'css', 'watch'));
+
+gulp.task('backstop_reference', () => backstopjs('reference', backstopConfig));
+gulp.task('backstop_test', () => backstopjs('test', backstopConfig));
+gulp.task('tests', function(done) {
+  connect.server({
+    port: 8888
+  });
+  done();
+});
+gulp.task('testdone', function(done) {
+  connect.serverClose();
+  done();
+});
+gulp.task('VR', gulp.series('tests', 'css', 'backstop_reference', 'testdone'));
+gulp.task('VRR', gulp.series('tests', 'css', 'backstop_test', 'testdone'));
