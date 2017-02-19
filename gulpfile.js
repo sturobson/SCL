@@ -131,5 +131,5 @@ gulp.task('watch', gulp.parallel('watchCSS', 'watchJS'));
 
 gulp.task('dev', gulp.parallel('frctlStart', 'css', 'watch'));
 
-gulp.task('vr-setup', gulp.series('tests', 'css', 'backstop_reference', 'testdone'));
-gulp.task('vr-test', gulp.series('tests', 'css', 'backstop_test', 'testdone'));
+gulp.task('vizres-setup', gulp.series('tests', 'css', 'backstop_reference', 'testdone'));
+gulp.task('vizres-test', gulp.series('tests', 'css', 'backstop_test', 'testdone'));
