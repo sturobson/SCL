@@ -32,7 +32,7 @@ const logger            = fractal.cli.console;
 // Configuration
 // -----------------------------------------------------------------------------
 
-// Sass Configarables
+// Sass and CSS Configarables
 
 const autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 
