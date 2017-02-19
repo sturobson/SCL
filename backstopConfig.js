@@ -2,7 +2,7 @@ var glob = require("glob")
 
 var viewports = [
   {
-    "name": "tiny",
+    "name": "small",
     "width": 375,
     "height": 667
   },
@@ -14,32 +14,31 @@ var viewports = [
   },
 
   {
-    "name": "hugeplus",
+    "name": "huge",
     "width": 1366,
     "height": 768
   }
 ];
 
-// Hide BrowserSync notice, KIS widget and videos
+// Hide any selectors you don't need
 var hideSelectors = [];
-// Take out markup samples
+// Take out any selectors
 var removeSelectors = [];
-// Just get #Main-Content
+// Just get look at these selectors
 var selectors = [];
 var scenariosArray = [];
 var htmlFiles = glob.sync("live/components/preview/**/*.html");
 
-// console.info(htmlFiles.length+' files found!');
-
-// Loop through all *.html pages in /dev and push to scenariosArray
+// Loop through all *.html pages and push to scenariosArray
 htmlFiles.forEach(function(file, i) {
-  var filename = file.substr(0);
+  var filename = file;
   scenariosArray.push({
     "label": filename,
     "url": "http://localhost:8888/"+filename,
     "hideSelectors": hideSelectors,
     "removeSelectors": removeSelectors,
-    "selectors": selectors
+    "selectors": selectors,
+    "delay": 500
   });
 });
 
