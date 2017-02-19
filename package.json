@@ -1,5 +1,5 @@
 {
-  "name": "Simple-Component-Library",
+  "name": "SimpleComponentLibrary",
   "version": "0.2.1",
   "scripts": {
     "create": "yo ./generators/app"
