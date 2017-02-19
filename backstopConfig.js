@@ -27,7 +27,7 @@ var removeSelectors = [];
 // Just get #Main-Content
 var selectors = [];
 var scenariosArray = [];
-var htmlFiles = glob.sync("live/components/preview/*.html");
+var htmlFiles = glob.sync("live/components/preview/**/*.html");
 
 // console.info(htmlFiles.length+' files found!');
 
