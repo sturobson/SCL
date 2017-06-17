@@ -33,6 +33,7 @@
     "gulp-sass": "^2.2.0",
     "gulp-sass-glob": "^1.0.5",
     "gulp-serve": "^1.2.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "lerna": "^2.0.0-rc.5"
   }
 }
