@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "name": "button",
+  "description": "button example",
+  "homepage": "http://alwaystwisted.com",
+  "author": "Stuart Robson",
+  "license": "MIT",
+  "style": "build/build.css",
+  "files": [
+    "_button.scss",
+    "button.hbs"
+  ],
+  "repository": "",
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [
+    "buttons"
+  ]
+}
