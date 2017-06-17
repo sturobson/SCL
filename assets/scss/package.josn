@@ -1,0 +1,19 @@
+{
+  "version": "0.0.0",
+  "name": "assets",
+  "description": "assets example",
+  "homepage": "http://alwaystwisted.com",
+  "author": "Stuart Robson",
+  "license": "MIT",
+  "style": "build/build.css",
+  "files": [
+    "stylers.scss",
+  ],
+  "repository": "",
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [
+    "assets"
+  ]
+}
