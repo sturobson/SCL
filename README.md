@@ -1,5 +1,6 @@
-# Simple Component Library
+# Ludo
 
+A component library, using Fractal, Gulp, Sass, BackstopJS, Lerna, and more.
 
 setup
 
