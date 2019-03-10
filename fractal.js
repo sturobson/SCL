@@ -10,7 +10,7 @@ const fractal    = module.exports = require('@frctl/fractal').create();
 const mandelbrot = require('@frctl/mandelbrot');
 
 
-fractal.set('project.title', 'Ludo');
+fractal.set('project.title', 'Simple Component Library');
 
 /* Configure components */
 
