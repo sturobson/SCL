@@ -25,7 +25,6 @@ const backstopjs        = require('backstopjs');
 
 const fractal           = require('./fractal.js');
 const logger            = fractal.cli.console;
-const path              = require('path');
 
 
 
@@ -45,7 +44,6 @@ gulp.task('css', function() {
   return gulp.src('./assets/scss/styles.scss')
   .pipe(sassGlob())
   .pipe(sass({
-    includePaths: [ path.resolve(__dirname, 'patterns') ],
     sourcemap: true,
     sourcemapPath: './patterns/',
   })).on('error', notify.onError(function (error) {return "Problem file : " + error.message;}))
@@ -115,7 +113,7 @@ gulp.task('testdone', function(done) {
 // -----------------------------------------------------------------------------
 
 gulp.task('watchCSS', function(done) {
-  gulp.watch(['./assets/**/*.scss', './patterns/**/*.scss'], gulp.series('css')).on('change', reload);
+  gulp.watch('./dev/assets/**/*.scss', gulp.series('css')).on('change', reload);
   done();
 });
 
