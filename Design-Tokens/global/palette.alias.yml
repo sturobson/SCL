@@ -1,0 +1,47 @@
+aliases:
+
+  # Green Colours
+
+  color--green: '#009F4D'
+  color--green--darkest: '#115740'
+  color--green--dark: '#007A53'
+  color--green--light: '#6CC24A'
+  color--green--lightest: '#D0DEBB'
+
+  # Grey
+
+  color--grey: '#707372'
+  color--grey--dark: '#54585A'
+  color--grey--darkest: '#373A36'
+  color--grey--lightest: '#A8A99E'
+  color--grey--light: '#D0D0CE'
+
+  # Red Colours
+
+  color--red: '#E40046'
+  color--red--dark: '#A6093D'
+  color--red--light: '#E58F9E'
+
+  # Blue Colours
+
+  color--blue: '#307FE2'
+  color--blue--dark: '#003DA5'
+  color--blue--light: '#8BB8E8'
+
+  # Purple Colours
+
+  color--purple: '#8246AF'
+  color--purple--dark: '#563D82'
+  color--purple--light: '#CBA3D8'
+
+  # Orange Colours
+
+  color--orange: '#FFA300'
+  color--orange--dark: '#BE5400'
+  color--orange--light: '#EFC06E'
+
+  # Yellow Colours
+
+  color--yellow: '#FFCD00'
+  color--yellow--dark: '#FFB81C'
+  color--yellow--light: '#FDD757'

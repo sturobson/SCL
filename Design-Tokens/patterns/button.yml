@@ -1,0 +1,19 @@
+imports:
+  - "../global/spacing.alias.yml"
+  - "../theme/brand.alias.yml"
+
+props:
+  - name: button-background-color
+    value: '{!brand-color-primary}'
+  - name: button-border-color
+    value: '{!brand-color-primary-dark}'
+
+  - name: button-text-color
+    value: '{!brand-text-color}'
+
+  - name: button-padding
+    value: '{!spacing--xs} {!spacing--r}'
+
+global:
+  type: token
+  category: global

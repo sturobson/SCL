@@ -1,0 +1,13 @@
+imports:
+  - "../global/palette.alias.yml"
+
+aliases:
+  brand-color-primary: '{!color--blue}'
+  brand-color-primary-dark: '{!color--blue--dark}'
+
+  brand-text-color: '{!color--grey--lightest}'
+
+
+global:
+  type: token
+  category: global
