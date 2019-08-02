@@ -5,27 +5,30 @@
 // -----------------------------------------------------------------------------
 const gulp              = require('gulp');
 
-// Sass and CSS Stuff
-const sass              = require('gulp-sass');
-const sassGlob          = require('gulp-sass-glob');
-const autoprefixer      = require('gulp-autoprefixer');
-const notify            = require("gulp-notify");
-
-// JS Things
-const concat            = require('gulp-concat');
-
-
-// Local Server Stuff
-const browserSync       = require('browser-sync').create();
-const reload            = browserSync.reload;
-const connect           = require('gulp-connect');
-const backstopjs        = require('backstopjs');
-
 // Housekeeping
 
 const fractal           = require('./fractal.js');
 const logger            = fractal.cli.console;
 const path              = require('path');
+const rename            = require("gulp-rename");
+
+// Sass and CSS Stuff
+const sass              = require('gulp-sass');
+const notify            = require("gulp-notify");
+
+// JS Things
+const concat            = require('gulp-concat');
+
+// Design Tokens
+const theoG = require('gulp-theo');
+const theo = require('theo');
+const componentPath = path.resolve(__dirname, 'src' );
+
+// Local Server Stuff
+const browserSync       = require('browser-sync').create();
+const reload            = browserSync.reload;
+
+
 
 
 
@@ -35,7 +38,60 @@ const path              = require('path');
 
 // Sass and CSS Configarables
 
-const autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
+
+// -----------------------------------------------------------------------------
+// Design Tokens Tasks
+// -----------------------------------------------------------------------------
+const theoGeneratedFileWarning = `// This file has been dynamically generated from design tokens
+// Please do NOT edit directly.`;
+const theoSourceTokenLocation = `// Source: {{relative "${ componentPath }" meta.file}}`;
+const theoGeneratedSassTemplate = `${theoGeneratedFileWarning}
+${theoSourceTokenLocation}
+
+{{#each props as |prop|}}
+{{#if prop.comment}}
+{{{trimLeft (indent (comment (trim prop.comment)))}}}
+{{/if}}
+\${{prop.name}}: {{#eq prop.type "string"}}"{{/eq}}{{{prop.value}}}{{#eq prop.type "string"}}"{{/eq}} !default;
+{{/each}}
+`;
+
+theo.registerFormat( "scss",`${theoGeneratedSassTemplate}`);
+
+gulp.task('tokens:variables', () =>
+  gulp.src('./Design-Tokens/patterns/*.yml')
+    .pipe(theoG({
+      transform: { type: 'web' },
+      format: { type: 'scss' }
+    }))
+    .pipe(rename(function (path) {
+       path.dirname += "/"+path.basename;
+       path.extname = ".variables.scss";
+   }))
+   .pipe(gulp.dest('./patterns'))
+);
+
+gulp.task('tokens:documentation', () =>
+  gulp.src(['./Design-Tokens/src/documentation/*.yml'])
+    .pipe(theoG({
+      transform: { type: 'web', includeMeta: true },
+      format: { type: 'ios.json' }
+    }))
+    .pipe(gulp.dest('./dist/documentation'))
+);
+
+gulp.task('tokens:maps', () =>
+  gulp.src(['./Design-Tokens/src/maps/*.yml'])
+    .pipe(theoG({
+      transform: { type: 'web' },
+      format: { type: 'map.scss' }
+    }))
+    .pipe(gulp.dest('./Design-Tokens/dist/sass/maps'))
+);
+
+gulp.task('tokens', gulp.parallel(
+  'tokens:maps', 'tokens:variables', 'tokens:documentation'
+));
 
 // -----------------------------------------------------------------------------
 // Sass and CSS Tasks
@@ -43,13 +99,11 @@ const autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR
 
 gulp.task('css', function() {
   return gulp.src('./assets/scss/styles.scss')
-  .pipe(sassGlob())
   .pipe(sass({
     includePaths: [ path.resolve(__dirname, 'patterns') ],
     sourcemap: true,
     sourcemapPath: './patterns/',
   })).on('error', notify.onError(function (error) {return "Problem file : " + error.message;}))
-  .pipe(autoprefixer(autoprefixerOptions))
   .pipe(browserSync.stream())
   .pipe(gulp.dest('./public/css'));
 });
@@ -86,30 +140,6 @@ gulp.task('frctlBuild', function () {
     logger.success('Fractal build completed!');
   });
 });
-
-// -----------------------------------------------------------------------------
-//  Visual Regression Tests
-// -----------------------------------------------------------------------------
-
-var backstopConfig = {
-  //Config file location
-  config: './backstopConfig.js'
-}
-
-gulp.task('backstop_reference', () => backstopjs('reference', backstopConfig));
-gulp.task('backstop_test', () => backstopjs('test', backstopConfig));
-
-gulp.task('tests', function(done) {
-  connect.server({
-    port: 8888
-  });
-  done();
-});
-gulp.task('testdone', function(done) {
-  connect.serverClose();
-  done();
-});
-
 // -----------------------------------------------------------------------------
 //  Watch Tasks
 // -----------------------------------------------------------------------------
@@ -124,14 +154,17 @@ gulp.task('watchJS', function(done) {
   done();
 });
 
+gulp.task('watchTokens', function(done) {
+  gulp.watch('./Design-Tokens/patterns/*.yml', gulp.series('tokens:variables')).on('change', reload);
+  done();
+});
+
+
 // -----------------------------------------------------------------------------
 // Default Tasks
 // -----------------------------------------------------------------------------
 
 
-gulp.task('watch', gulp.parallel('watchCSS', 'watchJS'));
+gulp.task('watch', gulp.parallel('watchCSS', 'watchJS', 'watchTokens'));
 
 gulp.task('dev', gulp.parallel('frctlStart', 'css', 'watch'));
-
-gulp.task('vizres-setup', gulp.series('tests', 'css', 'backstop_reference', 'testdone'));
-gulp.task('vizres-test', gulp.series('tests', 'css', 'backstop_test', 'testdone'));

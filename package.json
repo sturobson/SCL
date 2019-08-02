@@ -31,11 +31,15 @@
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
     "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
     "gulp-replace-path": "^0.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "^1.0.9",
     "gulp-serve": "^1.4.0",
+    "gulp-theo": "^2.0.0",
     "gulp-util": "^3.0.8",
-    "lerna": "^3.13.1"
+    "lerna": "^3.13.1",
+    "rename": "^1.0.4",
+    "theo": "^8.1.4"
   }
 }

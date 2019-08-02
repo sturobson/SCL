@@ -1,0 +1,21 @@
+@import 'button.variables.scss';
+@import 'button.overides.scss';
+
+button {
+  display: inline-block;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+
+.scl-button {
+  background-color: $button-background-color;
+  border: 1px solid $button-border-color;
+
+  color: $button-text-color;
+
+  padding: $button-padding;
+}
