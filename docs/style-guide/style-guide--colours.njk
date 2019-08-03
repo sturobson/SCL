@@ -1,0 +1,64 @@
+---
+title: Colour Palette
+label: Colours
+---
+<style>
+.vf-swatches {
+  display: grid;
+  grid-gap: 48px 24px;
+  grid-template-columns: 1fr 1fr;
+}
+.vf-swatch__colour {
+  height: 10vh;
+}
+.vf-swatch:nth-of-type(6) {
+  grid-column-start: 1;
+}
+.vf-swatch:nth-of-type(11) {
+  grid-column-start: 1;
+}
+.vf-swatch:nth-of-type(3n + 14) {
+  grid-column-start: 1;
+}
+</style>
+<main class="vf-swatches">
+{% for item in colors.properties %}
+
+<article class="vf-swatch">
+  <div class="vf-swatch__colour" style="background-color: {{ item.value}};">
+  </div>
+  <section class="vf-swatch__details">
+    <h3 class="vf-swatch__colour-name">
+      {{ item.meta.friendlyName }}
+    </h3>
+    <p class="vf-swatch__colour-hex">
+      <span class="vf-swatch__meta">Hex: </span>
+      {{ item.value }}
+    </p>
+    {% if item.meta.sassVariable %}
+      <p class="vf-swatch__sass-variable">
+        <span class="vf-swatch__meta">Sass Variable: </span>
+        $`{{- item.meta.sassVariable }}`
+      </p>
+      <p class="vf-swatch__sass-variable">
+        <span class="vf-swatch__meta">Sass Map: </span>
+        map-get($colors-map, `{{ item.meta.sassVariable }})`
+      </p>
+    {% endif %}
+    {% if item.meta.CSSCustomProperty %}
+      <p class="vf-swatch__css-property">
+        <span class="vf-swatch__meta">CSS Custom Property: </span>
+        `{{ item.meta.CSSCustomProperty }}`
+      </p>
+    {% endif %}
+    {% if item.meta.comment %}
+      <h4 class="vf-swatch__notes">notes:</h4>
+      <p class="vf-swatch__comment">
+        {{ item.meta.comment }}
+      </p>
+    {% endif %}
+  </section>
+</article>
+
+{% endfor %}
+</main>
