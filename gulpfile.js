@@ -225,3 +225,5 @@ gulp.task('watchTokens', function(done) {
 gulp.task('watch', gulp.parallel('watchCSS', 'watchJS', 'watchTokens'));
 
 gulp.task('dev', gulp.series('css', 'frctlStart', 'watch'));
+
+gulp.task('build', gulp.series('css', 'frctlBuild'));
