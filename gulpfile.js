@@ -42,9 +42,12 @@ const reload            = browserSync.reload;
 // -----------------------------------------------------------------------------
 // Design Tokens Tasks
 // -----------------------------------------------------------------------------
+theo.registerTransform("web", ["color/hex"]);
+
 const theoGeneratedFileWarning = `// This file has been dynamically generated from design tokens
 // Please do NOT edit directly.`;
 const theoSourceTokenLocation = `// Source: {{relative "${ componentPath }" meta.file}}`;
+
 const theoGeneratedSassTemplate = `${theoGeneratedFileWarning}
 ${theoSourceTokenLocation}
 
@@ -54,6 +57,34 @@ ${theoSourceTokenLocation}
 {{/if}}
 \${{prop.name}}: {{#eq prop.type "string"}}"{{/eq}}{{{prop.value}}}{{#eq prop.type "string"}}"{{/eq}} !default;
 {{/each}}
+`;
+
+const theoGeneratedMapTemplate = `${theoGeneratedFileWarning}
+
+${theoSourceTokenLocation}
+
+\${{stem meta.file}}-map: (
+{{#each props as |prop|}}
+  {{#if prop.comment}}
+  {{{trimLeft (indent (comment (trim prop.comment)))}}}
+  {{/if}}
+  '{{prop.name}}': ({{#eq prop.type "string"}}"{{/eq}}{{{prop.value}}}{{#eq prop.type "string"}}"{{/eq}}),
+{{/each}}
+);
+`;
+
+const theoGeneratedPropertiesTemplate = `${theoGeneratedFileWarning}
+
+${theoSourceTokenLocation}
+
+:root {
+  {{#each props as |prop|}}
+  {{#if prop.comment}}
+  {{{trimLeft (indent (comment (trim prop.comment)))}}}
+  {{/if}}
+  --{{prop.name}}: {{#eq prop.type "string"}}"{{/eq}}{{{prop.value}}}{{#eq prop.type "string"}}"{{/eq}};
+{{/each}}
+}
 `;
 
 theo.registerFormat( "scss",`${theoGeneratedSassTemplate}`);
@@ -71,17 +102,31 @@ gulp.task('tokens:variables', () =>
    .pipe(gulp.dest('./patterns'))
 );
 
+gulp.task('tokens:globalVariables', () =>
+  gulp.src('./Design-Tokens/global/*.yml')
+    .pipe(theoG({
+      transform: { type: 'web' },
+      format: { type: 'scss' }
+    }))
+    .pipe(rename(function (path) {
+       path.extname = ".variables.scss";
+   }))
+   .pipe(gulp.dest('./Design-Tokens/dist/sass/variables'))
+);
+
 gulp.task('tokens:documentation', () =>
-  gulp.src(['./Design-Tokens/src/documentation/*.yml'])
+  gulp.src(['./Design-Tokens/global/*.yml'])
     .pipe(theoG({
       transform: { type: 'web', includeMeta: true },
       format: { type: 'ios.json' }
     }))
-    .pipe(gulp.dest('./dist/documentation'))
+    .pipe(gulp.dest('./Design-Tokens/dist/documentation'))
 );
 
+theo.registerFormat( "map.scss",`${theoGeneratedMapTemplate}`);
+
 gulp.task('tokens:maps', () =>
-  gulp.src(['./Design-Tokens/src/maps/*.yml'])
+  gulp.src(['./Design-Tokens/global/*.yml'])
     .pipe(theoG({
       transform: { type: 'web' },
       format: { type: 'map.scss' }
@@ -89,9 +134,21 @@ gulp.task('tokens:maps', () =>
     .pipe(gulp.dest('./Design-Tokens/dist/sass/maps'))
 );
 
+theo.registerFormat( "custom-properties.scss",`${theoGeneratedPropertiesTemplate}`);
+
+gulp.task('tokens:props', () =>
+  gulp.src(['./Design-Tokens/global/*.yml'])
+    .pipe(theoG({
+      transform: { type: 'web' },
+      format: { type: 'custom-properties.scss' }
+    }))
+    .pipe(gulp.dest('./Design-Tokens/dist/sass/custom-properties'))
+);
+
 gulp.task('tokens', gulp.parallel(
-  'tokens:maps', 'tokens:variables', 'tokens:documentation'
+  'tokens:maps', 'tokens:variables', 'tokens:documentation', 'tokens:props', 'tokens:globalVariables'
 ));
+
 
 // -----------------------------------------------------------------------------
 // Sass and CSS Tasks
@@ -155,7 +212,7 @@ gulp.task('watchJS', function(done) {
 });
 
 gulp.task('watchTokens', function(done) {
-  gulp.watch('./Design-Tokens/patterns/*.yml', gulp.series('tokens:variables')).on('change', reload);
+  gulp.watch(['./Design-Tokens/theme/*.alias.yml', './Design-Tokens/patterns/*.yml'], gulp.series('tokens:variables')).on('change', reload);
   done();
 });
 
@@ -167,4 +224,4 @@ gulp.task('watchTokens', function(done) {
 
 gulp.task('watch', gulp.parallel('watchCSS', 'watchJS', 'watchTokens'));
 
-gulp.task('dev', gulp.parallel('frctlStart', 'css', 'watch'));
+gulp.task('dev', gulp.series('css', 'frctlStart', 'watch'));
