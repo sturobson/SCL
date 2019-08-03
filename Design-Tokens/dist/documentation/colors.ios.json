@@ -1,0 +1,329 @@
+{
+  "properties": [
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreen",
+      "value": "#009f4d",
+      "meta": {
+        "friendlyName": "Green",
+        "rgb": "rgb(0, 159, 77)",
+        "sassVariable": "color--green",
+        "CSSCustomProperty": "--color--green",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreenDarkest",
+      "value": "#115740",
+      "meta": {
+        "friendlyName": "Green, Darkest Tint",
+        "rgb": "rgb(10, 80, 50)",
+        "sassVariable": "color--green--darkest",
+        "CSSCustomProperty": "--color--green--darkest",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreenDark",
+      "value": "#007a53",
+      "meta": {
+        "friendlyName": "Green, Dark Tint",
+        "rgb": "rgb(0, 123, 83)",
+        "sassVariable": "color--green--dark",
+        "CSSCustomProperty": "--color--green--dark",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreenLight",
+      "value": "#6cc24a",
+      "meta": {
+        "friendlyName": "Green, Light Tint",
+        "rgb": "rgb(108, 194, 74)",
+        "sassVariable": "color--green--light",
+        "CSSCustomProperty": "--color--green--light",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreenLightest",
+      "value": "#d0debb",
+      "meta": {
+        "friendlyName": "Green, Lightest Tine",
+        "rgb": "rgb(204, 226, 193)",
+        "sassVariable": "color--green--lightest",
+        "CSSCustomProperty": "--color--green--lightest",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGrey",
+      "value": "#707372",
+      "meta": {
+        "friendlyName": "Grey",
+        "rgb": "rgb(112, 115, 114)",
+        "sassVariable": "color--grey",
+        "CSSCustomProperty": "--color--grey",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreyDarkest",
+      "value": "#373a36",
+      "meta": {
+        "friendlyName": "Grey, Darkest Tint",
+        "rgb": "rgb(40, 45, 35)",
+        "sassVariable": "color--grey--darkest",
+        "CSSCustomProperty": "--color--grey--darkest",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreyDark",
+      "value": "#54585a",
+      "meta": {
+        "friendlyName": "Grey, Dark Tint",
+        "rgb": "rgb(84, 88, 90)",
+        "sassVariable": "color--grey--dark",
+        "CSSCustomProperty": "--color--grey--dark",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreyLight",
+      "value": "#d0d0ce",
+      "meta": {
+        "friendlyName": "Grey, Light Tint",
+        "rgb": "rgb(185, 179, 168)",
+        "sassVariable": "color--grey--light",
+        "CSSCustomProperty": "--color--grey--light",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreyLightest",
+      "value": "#a8a99e",
+      "meta": {
+        "friendlyName": "Grey, Lightest Tint",
+        "rgb": "rgb(218, 216, 211)",
+        "sassVariable": "color--grey--lightest",
+        "CSSCustomProperty": "--color--grey--lightest",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRed",
+      "value": "#e40046",
+      "meta": {
+        "friendlyName": "Red",
+        "rgb": "rgb(228, 0, 70)",
+        "sassVariable": "color--red",
+        "CSSCustomProperty": "--color--red",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRedDark",
+      "value": "#a6093d",
+      "meta": {
+        "friendlyName": "Red, Dark Tint",
+        "rgb": "rgb(166, 9, 61)",
+        "sassVariable": "color--red--dark",
+        "CSSCustomProperty": "--color--red--dark",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRedLight",
+      "value": "#e58f9e",
+      "meta": {
+        "friendlyName": "Red, Light Tint",
+        "rgb": "rgb(229, 143, 158)",
+        "sassVariable": "color--red--light",
+        "CSSCustomProperty": "--color--red--light",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlue",
+      "value": "#307fe2",
+      "meta": {
+        "friendlyName": "Blue",
+        "rgb": "rgb(49, 122, 226)",
+        "sassVariable": "color--blue",
+        "CSSCustomProperty": "--color--blue",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlueDark",
+      "value": "#003da5",
+      "meta": {
+        "friendlyName": "Blue, Dark Tint",
+        "rgb": "rgb(0, 61, 165)",
+        "sassVariable": "color--blue--dark",
+        "CSSCustomProperty": "--color--blue--dark",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlueLight",
+      "value": "#8bb8e8",
+      "meta": {
+        "friendlyName": "Blue, Light Tint",
+        "rgb": "rgb(139, 184, 232)",
+        "sassVariable": "color--blue--light",
+        "CSSCustomProperty": "--color--blue--light",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurple",
+      "value": "#8246af",
+      "meta": {
+        "friendlyName": "Purple",
+        "rgb": "rgb(130, 70, 175)",
+        "sassVariable": "color--purple",
+        "CSSCustomProperty": "--color--purple",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurpleDark",
+      "value": "#563d82",
+      "meta": {
+        "friendlyName": "Purple, Dark Tint",
+        "rgb": "rgb(86, 61, 130)",
+        "sassVariable": "color--purple--dark",
+        "CSSCustomProperty": "--color--purple--dark",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurpleLight",
+      "value": "#cba3d8",
+      "meta": {
+        "friendlyName": "Purple, Light Tint",
+        "rgb": "rgb(203, 163, 216)",
+        "sassVariable": "color--purple--light",
+        "CSSCustomProperty": "--color--purple--light",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrange",
+      "value": "#ffa300",
+      "meta": {
+        "friendlyName": "Orange",
+        "rgb": "rgb(255, 163, 0)",
+        "sassVariable": "color--orange",
+        "CSSCustomProperty": "--color--orange",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrangeDark",
+      "value": "#be5400",
+      "meta": {
+        "friendlyName": "Orange, Dark Tint",
+        "rgb": "rgb(190, 84, 0)",
+        "sassVariable": "color--orange--dark",
+        "CSSCustomProperty": "--color--orange--dark",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrangeLight",
+      "value": "#efc06e",
+      "meta": {
+        "friendlyName": "Orange, Light Tint",
+        "rgb": "rgb(239, 192, 110)",
+        "sassVariable": "color--orange--light",
+        "CSSCustomProperty": "--color--orange--light",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellow",
+      "value": "#ffcd00",
+      "meta": {
+        "friendlyName": "Yellow",
+        "rgb": "rgb(255, 205, 0)",
+        "sassVariable": "color--yellow",
+        "CSSCustomProperty": "--color--yellow",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellowDark",
+      "value": "#ffb81c",
+      "meta": {
+        "friendlyName": "Yellow, Dark Tint",
+        "rgb": "rgb(255, 184, 28)",
+        "sassVariable": "color--yellow--dark",
+        "CSSCustomProperty": "--color--yellow--dark",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellowLight",
+      "value": "#fdd757",
+      "meta": {
+        "friendlyName": "Yellow, Light Tint",
+        "rgb": "rgb(253,215,87)",
+        "sassVariable": "color--yellow--light",
+        "CSSCustomProperty": "--color--yellow--light",
+        "comment": null
+      }
+    }
+  ]
+}

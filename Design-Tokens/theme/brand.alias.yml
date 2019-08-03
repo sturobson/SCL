@@ -1,11 +1,13 @@
 imports:
-  - "../global/palette.alias.yml"
+  - "../aliases/palette.alias.yml"
 
 aliases:
-  brand-color-primary: '{!color--blue}'
-  brand-color-primary-dark: '{!color--blue--dark}'
+  brand-color-primary: '{!color--purple}'
+  brand-color-primary-dark: '{!color--purple--dark}'
+  brand-color-primary-light: '{!color--purple--light}'
 
-  brand-text-color: '{!color--grey--lightest}'
+  brand-text-color: '{!color--white}'
+  brand-text-color--hover: '{!color--purple--dark}'
 
 
 global:

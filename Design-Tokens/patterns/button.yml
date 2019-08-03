@@ -1,18 +1,27 @@
 imports:
-  - "../global/spacing.alias.yml"
+  - "../aliases/spacing.alias.yml"
   - "../theme/brand.alias.yml"
 
 props:
+  # Colours
   - name: button-background-color
     value: '{!brand-color-primary}'
   - name: button-border-color
     value: '{!brand-color-primary-dark}'
 
+  # Typography
   - name: button-text-color
     value: '{!brand-text-color}'
 
+  # Spacing
   - name: button-padding
-    value: '{!spacing--xs} {!spacing--r}'
+    value: '{!spacing--r} {!spacing--l}'
+
+  # Hover Styles
+  - name: button-background-color--hover
+    value: '{!brand-color-primary-light}'
+  - name: button-text-color--hover
+    value: '{!brand-text-color--hover}'
 
 global:
   type: token

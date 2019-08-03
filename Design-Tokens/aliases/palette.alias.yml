@@ -10,11 +10,13 @@ aliases:
 
   # Grey
 
+  color--black: '#000000'
   color--grey: '#707372'
   color--grey--dark: '#54585A'
   color--grey--darkest: '#373A36'
   color--grey--lightest: '#A8A99E'
   color--grey--light: '#D0D0CE'
+  color--white: '#FFFFFF'
 
   # Red Colours
 

@@ -1,5 +1,5 @@
 imports:
-  - "../global/palette.alias.yml"
+  - "../aliases/palette.alias.yml"
 
 props:
 
