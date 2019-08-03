@@ -18,4 +18,13 @@ button {
   color: $button-text-color;
 
   padding: $button-padding;
+
+  &:hover,
+  &:focus {
+    background-color: $button-background-color--hover;
+    color: $button-text-color--hover;
+  }
 }
+
+
+@import 'button.mixes.scss';

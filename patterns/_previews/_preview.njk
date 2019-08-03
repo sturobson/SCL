@@ -7,7 +7,7 @@
     <!-- FOUC beater -->
     <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
 
-    <link media="all" rel="stylesheet" href="{{ path '/css/styles.css' }}">
+    <link rel="stylesheet" href="{{ '/css/styles.css' | path }}">
     <title>{{ _target.title }} | Simple Component Lubrary</title>
     <style>
       body {
@@ -17,9 +17,8 @@
 </head>
 <body>
 
-{{{ yield }}}
+{{ yield | safe }}
 
 </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="{{ path '/javascript/scripts.js'}}"></script>
+    <script src="{{ '/javascript/scripts.js' | path }}"></script>
 </html>
