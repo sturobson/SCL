@@ -1,3 +1,30 @@
+:root {
+  --color--green: #009f4d;
+  --color--green--darkest: #115740;
+  --color--green--dark: #007a53;
+  --color--green--light: #6cc24a;
+  --color--green--lightest: #d0debb;
+  --color--grey: #707372;
+  --color--grey--darkest: #373a36;
+  --color--grey--dark: #54585a;
+  --color--grey--light: #d0d0ce;
+  --color--grey--lightest: #a8a99e;
+  --color--red: #e40046;
+  --color--red--dark: #a6093d;
+  --color--red--light: #e58f9e;
+  --color--blue: #307fe2;
+  --color--blue--dark: #003da5;
+  --color--blue--light: #8bb8e8;
+  --color--purple: #8246af;
+  --color--purple--dark: #563d82;
+  --color--purple--light: #cba3d8;
+  --color--orange: #ffa300;
+  --color--orange--dark: #be5400;
+  --color--orange--light: #efc06e;
+  --color--yellow: #ffcd00;
+  --color--yellow--dark: #ffb81c;
+  --color--yellow--light: #fdd757; }
+
 button {
   display: inline-block;
   margin: 0;
@@ -7,7 +34,10 @@ button {
   -webkit-appearance: none; }
 
 .scl-button {
-  background-color: #307FE2;
-  border: 1px solid #003DA5;
-  color: #A8A99E;
-  padding: 4px 12px; }
+  background-color: #8246AF;
+  border: 1px solid #563D82;
+  color: #FFFFFF;
+  padding: 12px 20px; }
+  .scl-button:hover, .scl-button:focus {
+    background-color: #CBA3D8;
+    color: #563D82; }
