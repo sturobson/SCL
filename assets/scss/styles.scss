@@ -2,7 +2,14 @@
 
 // Design Tokens
 
+// Custom Properties
+@import 'Design-Tokens/dist/sass/custom-properties/colors.custom-properties.scss';
+
+// Sass Maps
 @import 'Design-Tokens/dist/sass/maps/colors.map.scss';
+
+// Sass Variables
+@import 'Design-Tokens/dist/sass/variables/colors.variables.scss';
 
 
 // Components
