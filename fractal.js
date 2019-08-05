@@ -3,14 +3,26 @@
 'use strict';
 
 /*
- * Dependencies
- */
+* Dependencies
+*/
 
 const fractal    = module.exports = require('@frctl/fractal').create();
 const mandelbrot = require('@frctl/mandelbrot');
 
 
 fractal.set('project.title', 'Simple Component Library');
+
+const myCustomisedTheme = mandelbrot({
+  skin: "black",
+  "panels": ["html", "resources", "notes"],
+  "styles": [
+    "default",
+    "/theme/theme.css"
+  ]
+  // any other theme configuration values here
+});
+
+
 
 /* Configure components */
 
@@ -33,6 +45,7 @@ fractal.web.set('builder.dest', __dirname + '/live');
 fractal.web.set('static.path', `${__dirname}/public`);
 fractal.web.set('server.sync', true);
 fractal.web.set('server.syncOptions', {
-    open: true,
-    browser: 'default'
+  open: true,
+  browser: 'default'
 });
+fractal.web.theme(myCustomisedTheme);
