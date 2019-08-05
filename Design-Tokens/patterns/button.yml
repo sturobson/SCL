@@ -3,25 +3,95 @@ imports:
   - "../theme/brand.alias.yml"
 
 props:
-  # Colours
-  - name: button-background-color
-    value: '{!brand-color-primary}'
-  - name: button-border-color
-    value: '{!brand-color-primary-dark}'
 
+  # Base
+
+  # Colours
+  - name: base-button-background-color
+    value: '{!brand-base-color}'
+    comment: Base Colours
+  - name: base-button-border-color
+    value: '{!brand-base-color-dark}'
+
+  # Hover Styles
+  - name: base-button-background-color--hover
+    value: '{!brand-base-color-light}'
+  # Primary
+
+  - name: primary-button-background-color
+    value: '{!brand-primary-color}'
+    comment: Primary Colours
+  - name: primary-button-background-color--hover
+    value: '{!brand-primary-color-light}'
+
+  - name: primary-button-border-color
+    value: '{!brand-primary-color-dark}'
+
+  # Secondary
+
+  # Colours
+  - name: secondary-button-background-color
+    value: '{!brand-secondary-color}'
+    comment: Secondary Colours
+  - name: secondary-button-border-color
+    value: '{!brand-secondary-color-dark}'
+
+  # Hover Styles
+  - name: secondary-button-background-color--hover
+    value: '{!brand-secondary-color-light}'
+
+  # Tertiary
+
+  # Colours
+  - name: tertiary-button-background-color
+    value: '{!brand-tertiary-color}'
+    comment: Tertiary Colours
+  - name: tertiary-button-border-color
+    value: '{!brand-tertiary-color-dark}'
+
+  # Hover Styles
+  - name: tertiary-button-background-color--hover
+    value: '{!brand-tertiary-color-light}'
+
+  # Accent
+
+  # Colours
+  - name: accent-button-background-color
+    value: '{!brand-accent-color}'
+    comment: Accent Colours
+  - name: accent-button-border-color
+    value: '{!brand-accent-color-dark}'
+
+  # Hover Styles
+  - name: accent-button-background-color--hover
+    value: '{!brand-accent-color-light}'
   # Typography
   - name: button-text-color
     value: '{!brand-text-color}'
-
-  # Spacing
-  - name: button-padding
-    value: '{!spacing--r} {!spacing--l}'
-
-  # Hover Styles
-  - name: button-background-color--hover
-    value: '{!brand-color-primary-light}'
+    comment: Type Colours
+  - name: button-text-color-alt
+    value: '{!brand-text-color-alt}'
   - name: button-text-color--hover
     value: '{!brand-text-color--hover}'
+  - name: button-text-color-alt--hover
+    value: '{!brand-text-color-alt--hover}'
+
+  # Spacing
+  - name: button-padding--sm
+    value: '{!spacing--xs} {!spacing--r}'
+    comment: Spacing
+  - name: button-padding
+    value: '{!spacing--r} {!spacing--l}'
+  - name: button-padding--lg
+    value: '{!spacing--l} {!spacing--l}'
+  - name: button-padding--xl
+    value: '{!spacing--xl} {!spacing--xl}'
+
+  # Rounded
+  - name: button--rounded
+    value: 8px
+    comment: Rounded
+
 
 global:
   type: token

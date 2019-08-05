@@ -2,12 +2,31 @@ imports:
   - "../aliases/palette.alias.yml"
 
 aliases:
-  brand-color-primary: '{!color--purple}'
-  brand-color-primary-dark: '{!color--purple--dark}'
-  brand-color-primary-light: '{!color--purple--light}'
+  brand-primary-color: '{!color-blue--500}'
+  brand-primary-color-dark: '{!color-blue--800}'
+  brand-primary-color-light: '{!color-blue--200}'
 
-  brand-text-color: '{!color--white}'
-  brand-text-color--hover: '{!color--purple--dark}'
+  brand-secondary-color: '{!color-purple--500}'
+  brand-secondary-color-dark: '{!color-purple--800}'
+  brand-secondary-color-light: '{!color-purple--200}'
+
+  brand-tertiary-color: '{!color-green--500}'
+  brand-tertiary-color-dark: '{!color-green--800}'
+  brand-tertiary-color-light: '{!color-green--200}'
+
+  brand-accent-color: '{!color-orange--500}'
+  brand-accent-color-dark: '{!color-orange--800}'
+  brand-accent-color-light: '{!color-orange--200}'
+
+  brand-base-color: '{!color-grey--500}'
+  brand-base-color-dark: '{!color-grey--800}'
+  brand-base-color-light: '{!color-grey--200}'
+
+  brand-text-color: '{!color-white}'
+  brand-text-color--hover: '{!color-white}'
+
+  brand-text-color-alt: '{!color-grey--800}'
+  brand-text-color-alt--hover: '{!color-black}'
 
 
 global:
