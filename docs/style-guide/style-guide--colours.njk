@@ -5,28 +5,27 @@ label: Colours
 <style>
 .vf-swatches {
   display: grid;
-  grid-gap: 48px 24px;
-  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-row-gap: 48px;
+  grid-column-gap: 24px;
+  grid-template-columns: 1fr 1fr;
+}
+.vf-swatch {
+  display: grid;
+  grid-column-gap: 24px;
+  grid-template-columns: 2fr 1fr;
 }
 .vf-swatch__colour {
-  height: 10vh;
+  height: 100%;
 }
-.vf-swatch:nth-of-type(6) {
+.vf-swatch:nth-of-type(9n + 10) {
   grid-column-start: 1;
 }
-.vf-swatch:nth-of-type(11) {
-  grid-column-start: 1;
-}
-.vf-swatch:nth-of-type(3n + 14) {
-  grid-column-start: 1;
-}
+
 </style>
 <main class="vf-swatches">
 {% for item in colors.properties %}
 
 <article class="vf-swatch">
-  <div class="vf-swatch__colour" style="background-color: {{ item.value}};">
-  </div>
   <section class="vf-swatch__details">
     <h3 class="vf-swatch__colour-name">
       {{ item.meta.friendlyName }}
@@ -42,7 +41,7 @@ label: Colours
       </p>
       <p class="vf-swatch__sass-variable">
         <span class="vf-swatch__meta">Sass Map: </span>
-        map-get($colors-map, `{{ item.meta.sassVariable }})`
+        `map-get($colors-map, {{ item.meta.sassVariable }})`
       </p>
     {% endif %}
     {% if item.meta.CSSCustomProperty %}
@@ -58,6 +57,8 @@ label: Colours
       </p>
     {% endif %}
   </section>
+  <div class="vf-swatch__colour" style="background-color: {{ item.value}};">
+  </div>
 </article>
 
 {% endfor %}

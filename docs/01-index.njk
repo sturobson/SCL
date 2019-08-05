@@ -1,4 +1,0 @@
----
-title: Welcome
-label: Welcome
----
