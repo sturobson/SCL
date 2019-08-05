@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FOUC beater -->
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+    <link rel="stylesheet" href="{{ '/css/styles.css' | path }}">
+    <title>{{ _target.title }} | Simple Component Lubrary</title>
+    <style>
+      body {
+        background-color: #333333;
+        margin: 40px;
+      }
+    </style>
+</head>
+<body>
+
+{{ yield | safe }}
+
+</body>
+    <script src="{{ '/javascript/scripts.js' | path }}"></script>
+</html>
