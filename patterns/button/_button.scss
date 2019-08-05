@@ -1,28 +1,110 @@
+.scl-example {
+  margin: 0 32px 24px;
+  & > *:not(:first-of-type) {
+    margin-left: 12px;
+  }
+}
+
 @import 'button.variables.scss';
 @import 'button.overides.scss';
 
 button {
+  background: transparent;
+  border: 0;
   display: inline-block;
-  margin: 0;
   font-size: 1rem;
   line-height: 1;
-  background: transparent;
+  margin: 0;
   -webkit-appearance: none;
 }
 
 
 .scl-button {
-  background-color: $button-background-color;
-  border: 1px solid $button-border-color;
 
+  color: $button-text-color-alt;
+
+
+  background-color: $base-button-background-color;
+  border: 1px solid $base-button-border-color;
   color: $button-text-color;
-
-  padding: $button-padding;
 
   &:hover,
   &:focus {
-    background-color: $button-background-color--hover;
-    color: $button-text-color--hover;
+    background-color: $base-button-background-color--hover;
+    color: $button-text-color-alt--hover;
+  }
+
+  padding: $button-padding;
+
+  &--small {
+    padding: $button-padding--sm;
+  }
+
+  &--large {
+    padding: $button-padding--lg;
+  }
+
+  &--extra-large {
+    padding: $button-padding--xl;
+  }
+
+  &--rounded {
+    border-radius: $button--rounded;
+  }
+
+
+  &--primary {
+    background-color: $primary-button-background-color;
+    border: 1px solid $primary-button-border-color;
+    color: $button-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: $primary-button-background-color--hover;
+      color: $button-text-color-alt--hover;
+    }
+  }
+
+  &--secondary {
+    background-color: $secondary-button-background-color;
+    border: 1px solid $secondary-button-border-color;
+    color: $button-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: $secondary-button-background-color--hover;
+      color: $button-text-color--hover;
+    }
+  }
+
+  &--tertiary {
+    background-color: $tertiary-button-background-color;
+    border: 1px solid $tertiary-button-border-color;
+    color: $button-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: $tertiary-button-background-color--hover;
+      color: $button-text-color-alt--hover;
+    }
+  }
+
+  &--accent {
+    background-color: $accent-button-background-color;
+    border: 1px solid $accent-button-border-color;
+    color: $button-text-color-alt;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-button-background-color--hover;
+      color: $button-text-color-alt--hover;
+    }
+  }
+
+
+  &:active {
+    transform: translateY(1px);
+    position: relative;
   }
 }
 
