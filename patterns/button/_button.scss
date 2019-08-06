@@ -20,6 +20,7 @@ button {
 
 
 .scl-button {
+  @include set-type(body);
 
   color: $button-text-color-alt;
 
@@ -27,6 +28,8 @@ button {
   background-color: $base-button-background-color;
   border: 1px solid $base-button-border-color;
   color: $button-text-color;
+
+  transition: all linear $button-speed;
 
   &:hover,
   &:focus {
@@ -105,6 +108,11 @@ button {
   &:active {
     transform: translateY(1px);
     position: relative;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: $button--disabled;
+    pointer-events: none;
   }
 }
 
