@@ -1,0 +1,27 @@
+---
+title: Typography
+label: Typography
+---
+<main class="vf-swatches">
+
+{% for item in typography.properties %}
+
+<article class="">
+  <h3 class="">{{ item.meta.friendlyName }}</h3>
+
+  <section class="">
+    <p style="font-size: {{ item.value.fontSize }}; font-weight: {{ item.value.fontWeight }}; line-height: {{ item.value.lineHeight }}">{{ item.meta.pangram }}</p>
+  </section>
+  <ul class="">
+    <li><span>Font Size: </span>{{ item.value.fontSize }}</li>
+    <li><span>Font Weight: </span>{{ item.value.fontWeight }}</li>
+    <li><span>Ling Height: </span>{{ item.value.lineHeight}}</li>
+  </ul>
+
+  <ul>
+    <li><span>Sass: </span><code>`@mixin set-type({{ item.meta.sassMap }})`</code></li>
+  </ul>
+</article>
+
+{% endfor %}
+</main>

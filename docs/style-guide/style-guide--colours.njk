@@ -2,26 +2,6 @@
 title: Colour Palette
 label: Colours
 ---
-<style>
-.vf-swatches {
-  display: grid;
-  grid-row-gap: 48px;
-  grid-column-gap: 24px;
-  grid-template-columns: 1fr 1fr;
-}
-.vf-swatch {
-  display: grid;
-  grid-column-gap: 24px;
-  grid-template-columns: 2fr 1fr;
-}
-.vf-swatch__colour {
-  height: 100%;
-}
-.vf-swatch:nth-of-type(9n + 10) {
-  grid-column-start: 1;
-}
-
-</style>
 <main class="vf-swatches">
 {% for item in colors.properties %}
 
@@ -32,12 +12,12 @@ label: Colours
     </h3>
     <p class="vf-swatch__colour-hex">
       <span class="vf-swatch__meta">Hex: </span>
-      {{ item.value }}
+      `{{ item.value }}`
     </p>
     {% if item.meta.sassVariable %}
       <p class="vf-swatch__sass-variable">
         <span class="vf-swatch__meta">Sass Variable: </span>
-        $`{{- item.meta.sassVariable }}`
+        `${{- item.meta.sassVariable }}`
       </p>
       <p class="vf-swatch__sass-variable">
         <span class="vf-swatch__meta">Sass Map: </span>
