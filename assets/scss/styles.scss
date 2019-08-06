@@ -7,12 +7,22 @@
 
 // Sass Maps
 @import 'Design-Tokens/dist/sass/maps/colors.map.scss';
+@import 'Design-Tokens/dist/sass/maps/typography.map.scss';
 
 // Sass Variables
 @import 'Design-Tokens/dist/sass/variables/colors.variables.scss';
+@import 'Design-Tokens/dist/sass/variables/duration.variables.scss';
+@import 'Design-Tokens/dist/sass/variables/border-radius.variables.scss';
+@import 'Design-Tokens/dist/sass/variables/opacity.variables.scss';
+@import 'Design-Tokens/dist/sass/variables/spacing.variables.scss';
+@import 'Design-Tokens/dist/sass/variables/font-family.variables.scss';
+
+// Import Mixins
+
+@import '_mixins.scss';
 
 
 // Components
 
 @import 'patterns/button/_button.scss';
-@import 'patterns/button-custom-prop/_button-custom-prop.scss';
+// @import 'patterns/button-custom-prop/_button-custom-prop.scss';
