@@ -89,6 +89,31 @@ ${theoSourceTokenLocation}
 
 theo.registerFormat( "scss",`${theoGeneratedSassTemplate}`);
 
+theo.registerFormat('typography-map', result => {
+  let { category, type } = result
+    .get('props')
+    .first()
+    .toJS();
+  return `${theoGeneratedFileWarning}
+// Source: ${path.basename(result.getIn(['meta', 'file']))}
+$${category}-map: (
+${result
+  .get('props')
+  .map(
+  prop => `
+  '${prop.get("name")}': (
+    'font-size': ${prop.getIn(["value", "fontSize"])},
+    'font-weight': ${prop.getIn(["value", "fontWeight"])},
+    'line-height': ${prop.getIn(["value", "lineHeight"])}
+  ),`
+  )
+  .sort()
+  .join('\n')}
+);
+  `;
+});
+
+
 gulp.task('tokens:variables', () =>
   gulp.src('./Design-Tokens/patterns/*.yml')
     .pipe(theoG({
@@ -102,8 +127,20 @@ gulp.task('tokens:variables', () =>
    .pipe(gulp.dest('./patterns'))
 );
 
+gulp.task('tokens:typographic-scale', () =>
+  gulp.src('./Design-Tokens/global/typography.yml')
+    .pipe(theoG({
+      transform: { type: 'web' },
+      format: { type: 'typography-map' }
+    }))
+    .pipe(rename(function (path) {
+      path.extname = ".map.scss";
+    }))
+    .pipe(gulp.dest('./Design-Tokens/dist/sass/maps'))
+);
+
 gulp.task('tokens:globalVariables', () =>
-  gulp.src('./Design-Tokens/global/*.yml')
+  gulp.src(['./Design-Tokens/global/*.yml', '!./Design-Tokens/global/typography.yml'])
     .pipe(theoG({
       transform: { type: 'web' },
       format: { type: 'scss' }
@@ -126,7 +163,7 @@ gulp.task('tokens:documentation', () =>
 theo.registerFormat( "map.scss",`${theoGeneratedMapTemplate}`);
 
 gulp.task('tokens:maps', () =>
-  gulp.src(['./Design-Tokens/global/*.yml'])
+  gulp.src(['./Design-Tokens/global/*.yml', '!./Design-Tokens/global/typography.yml', '!./Design-Tokens/global/font-family.yml'])
     .pipe(theoG({
       transform: { type: 'web' },
       format: { type: 'map.scss' }
@@ -137,7 +174,7 @@ gulp.task('tokens:maps', () =>
 theo.registerFormat( "custom-properties.scss",`${theoGeneratedPropertiesTemplate}`);
 
 gulp.task('tokens:props', () =>
-  gulp.src(['./Design-Tokens/global/*.yml'])
+  gulp.src(['./Design-Tokens/global/*.yml', '!./Design-Tokens/global/typography.yml'])
     .pipe(theoG({
       transform: { type: 'web' },
       format: { type: 'custom-properties.scss' }
@@ -146,7 +183,7 @@ gulp.task('tokens:props', () =>
 );
 
 gulp.task('tokens', gulp.parallel(
-  'tokens:maps', 'tokens:variables', 'tokens:documentation', 'tokens:props', 'tokens:globalVariables'
+  'tokens:maps', 'tokens:variables', 'tokens:documentation', 'tokens:props', 'tokens:globalVariables', 'tokens:typographic-scale'
 ));
 
 
