@@ -1,5 +1,8 @@
 imports:
   - "../aliases/spacing.alias.yml"
+  - "../aliases/border-radius.alias.yml"
+  - "../aliases/opacity.alias.yml"
+  - "../aliases/duration.alias.yml"
   - "../theme/brand.alias.yml"
 
 props:
@@ -89,8 +92,15 @@ props:
 
   # Rounded
   - name: button--rounded
-    value: 8px
+    value: '{!border-radius--r}'
     comment: Rounded
+
+  # Disabled
+  - name: button--disabled
+    value: '{!opacity--disabled}'
+
+  - name: button-speed
+    value: '{!duration-base}'
 
 
 global:

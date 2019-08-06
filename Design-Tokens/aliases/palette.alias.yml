@@ -82,3 +82,8 @@ aliases:
 
   color-black: "#000000"
   color-white: "#FFFFFF"
+
+
+global:
+  type: color
+  category: color

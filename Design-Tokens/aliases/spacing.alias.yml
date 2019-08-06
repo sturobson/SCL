@@ -1,11 +1,11 @@
 aliases:
-  spacing--0: 0px
-  spacing--xs: 4px
-  spacing--s: 8px
-  spacing--r: 12px
-  spacing--l: 20px
-  spacing--xl: 24px
-  spacing--xxl: 32px
+  spacing--0: 0
+  spacing--xs: .25em
+  spacing--s: .5em
+  spacing--r: 1rem
+  spacing--l: 1.25rem
+  spacing--xl: 1.5rem
+  spacing--xxl: 2rem
 
 global:
   type: number
