@@ -1,0 +1,45 @@
+imports:
+  - "../aliases/duration.alias.yml"
+
+props:
+
+  - name: duration-none
+    value: '{!duration-none}'
+    meta:
+      friendlyName: Duration, none
+      sassVariable: duration-none
+      CSSCustomProperty: duration-none
+  - name: duration-fast
+    value: '{!duration-fast}'
+    meta:
+      friendlyName: Duration, fast
+      sassVariable: duration-fast
+      CSSCustomProperty: duration-fast
+  - name: duration-base
+    value: '{!duration-base}'
+    meta:
+      friendlyName: Duration, base
+      sassVariable: duration-base
+      CSSCustomProperty: duration-base
+  - name: duration-slow
+    value: '{!duration-slow}'
+    meta:
+      friendlyName: Duration, slow
+      sassVariable: duration-slow
+      CSSCustomProperty: duration-slow
+  - name: duration-slower
+    value: '{!duration-slower}'
+    meta:
+      friendlyName: Duration, slower
+      sassVariable: duration-slower
+      CSSCustomProperty: duration-slower
+  - name: duration-slowest
+    value: '{!duration-slowest}'
+    meta:
+      friendlyName: Duration, slowest
+      sassVariable: duration-slowest
+      CSSCustomProperty: duration-slowest
+
+global:
+  type: time
+  category: time

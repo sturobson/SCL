@@ -1,0 +1,44 @@
+imports:
+  - "../aliases/border-radius.alias.yml"
+
+props:
+
+  - name: border-radius--circle
+    value: '{!border-radius--circle}'
+    meta:
+      friendlyName: Border Radius, Circle
+      sassVariable: border-radius--circle
+      CSSCustomProperty: border-radius--circle
+
+  - name: border-radius--s
+    value: '{!border-radius--s}'
+    meta:
+      friendlyName: Border Radius, Small
+      sassVariable: border-radius--s
+      CSSCustomProperty: border-radius--s
+
+  - name: border-radius--r
+    value: '{!border-radius--r}'
+    meta:
+      friendlyName: Border Radius, Regular
+      sassVariable: border-radius--r
+      CSSCustomProperty: border-radius--r
+
+  - name: border-radius--l
+    value: '{!border-radius--l}'
+    meta:
+      friendlyName: Border Radius, Large
+      sassVariable: border-radius--l
+      CSSCustomProperty: border-radius--l
+
+  - name: border-radius--xl
+    value: '{!border-radius--xl}'
+    meta:
+      friendlyName: Border Radius, Extra Large
+      sassVariable: border-radius--xl
+      CSSCustomProperty: border-radius--xl
+
+
+global:
+  type: number
+  category: border-radius

@@ -1,0 +1,70 @@
+{
+  "properties": [
+    {
+      "type": "time",
+      "category": "time",
+      "name": "durationNone",
+      "value": "0",
+      "meta": {
+        "friendlyName": "Duration, none",
+        "sassVariable": "duration-none",
+        "CSSCustomProperty": "duration-none"
+      }
+    },
+    {
+      "type": "time",
+      "category": "time",
+      "name": "durationFast",
+      "value": "100ms",
+      "meta": {
+        "friendlyName": "Duration, fast",
+        "sassVariable": "duration-fast",
+        "CSSCustomProperty": "duration-fast"
+      }
+    },
+    {
+      "type": "time",
+      "category": "time",
+      "name": "durationBase",
+      "value": "200ms",
+      "meta": {
+        "friendlyName": "Duration, base",
+        "sassVariable": "duration-base",
+        "CSSCustomProperty": "duration-base"
+      }
+    },
+    {
+      "type": "time",
+      "category": "time",
+      "name": "durationSlow",
+      "value": "300ms",
+      "meta": {
+        "friendlyName": "Duration, slow",
+        "sassVariable": "duration-slow",
+        "CSSCustomProperty": "duration-slow"
+      }
+    },
+    {
+      "type": "time",
+      "category": "time",
+      "name": "durationSlower",
+      "value": "400ms",
+      "meta": {
+        "friendlyName": "Duration, slower",
+        "sassVariable": "duration-slower",
+        "CSSCustomProperty": "duration-slower"
+      }
+    },
+    {
+      "type": "time",
+      "category": "time",
+      "name": "durationSlowest",
+      "value": "500ms",
+      "meta": {
+        "friendlyName": "Duration, slowest",
+        "sassVariable": "duration-slowest",
+        "CSSCustomProperty": "duration-slowest"
+      }
+    }
+  ]
+}

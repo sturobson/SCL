@@ -1,0 +1,57 @@
+imports:
+  - "../aliases/spacing.alias.yml"
+
+props:
+
+  - name: spacing--0
+    value: '{!spacing--0}'
+    meta:
+      friendlyName: Spacing, 0
+      sassVariable: spacing--0
+      CSSCustomProperty: --spacing--0
+      comment:
+  - name: spacing--xs
+    value: '{!spacing--xs}'
+    meta:
+      friendlyName: Spacing, extra small
+      sassVariable: spacing--xs
+      CSSCustomProperty: --spacing--xs
+      comment:
+  - name: spacing--s
+    value: '{!spacing--s}'
+    meta:
+      friendlyName: Spacing, small
+      sassVariable: spacing--s
+      CSSCustomProperty: --spacing--s
+      comment:
+  - name: spacing--r
+    value: '{!spacing--r}'
+    meta:
+      friendlyName: Spacing, regular
+      sassVariable: spacing--r
+      CSSCustomProperty: --spacing--r
+      comment:
+  - name: spacing--l
+    value: '{!spacing--l}'
+    meta:
+      friendlyName: Spacing, large
+      sassVariable: spacing--l
+      CSSCustomProperty: --spacing--l
+      comment:
+  - name: spacing--xl
+    value: '{!spacing--xl}'
+    meta:
+      friendlyName: Spacing, extra large
+      sassVariable: spacing--xl
+      CSSCustomProperty: --spacing--xl
+      comment:
+  - name: spacing--xxl
+    value: '{!spacing--xxl}'
+    meta:
+      friendlyName: Spacing, extra extra large
+      sassVariable: spacing--xxl
+      CSSCustomProperty: --spacing--xxl
+      comment:
+global:
+  type: number
+  category: spacing
