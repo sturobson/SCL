@@ -1,0 +1,12 @@
+aliases:
+  breakpoints-xxs: 0
+  breakpoints-xs:	400px
+  breakpoints-sm:	550px
+  breakpoints-md:	750px
+  breakpoints-lg:	1000px
+  breakpoints-xl:	1200px
+  breakpoints-xxl: 1600px
+
+global:
+  type: number
+  category: breakpoints
