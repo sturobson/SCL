@@ -6,5 +6,5 @@ $duration-none: 0 !default;
 $duration-fast: 100ms !default;
 $duration-base: 200ms !default;
 $duration-slow: 300ms !default;
-$duration-slower: 400ms !default;
 $duration-slowest: 500ms !default;
+$duration-curve: cubic-bezier(0.4, 0, 0.2, 1) !default;

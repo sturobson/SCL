@@ -1,0 +1,81 @@
+{
+  "properties": [
+    {
+      "type": "number",
+      "category": "z-index",
+      "name": "zIndexWidget",
+      "value": "2",
+      "meta": {
+        "friendlyName": "Z Index, Widget",
+        "sassVariable": "z-index-widget",
+        "CSSCustomProperty": "z-index-widget"
+      }
+    },
+    {
+      "type": "number",
+      "category": "z-index",
+      "name": "zIndexNavigation",
+      "value": "5",
+      "meta": {
+        "friendlyName": "Z Index, Navigation",
+        "sassVariable": "z-index-navigation",
+        "CSSCustomProperty": "z-index-navigation"
+      }
+    },
+    {
+      "type": "number",
+      "category": "z-index",
+      "name": "zIndexBanner",
+      "value": "10",
+      "meta": {
+        "friendlyName": "Z Index, Banner",
+        "sassVariable": "z-index-banner",
+        "CSSCustomProperty": "z-index-banner"
+      }
+    },
+    {
+      "type": "number",
+      "category": "z-index",
+      "name": "zIndexModal",
+      "value": "10",
+      "meta": {
+        "friendlyName": "Z Index, Modal",
+        "sassVariable": "z-index-modal",
+        "CSSCustomProperty": "z-index-modal"
+      }
+    },
+    {
+      "type": "number",
+      "category": "z-index",
+      "name": "zIndexSidebar",
+      "value": "10",
+      "meta": {
+        "friendlyName": "Z Index, Sidebar",
+        "sassVariable": "z-index-sidebar",
+        "CSSCustomProperty": "z-index-sidebar"
+      }
+    },
+    {
+      "type": "number",
+      "category": "z-index",
+      "name": "zIndexFloatingButton",
+      "value": "20",
+      "meta": {
+        "friendlyName": "Z Index, Floating Button",
+        "sassVariable": "z-index-floating-button",
+        "CSSCustomProperty": "z-index-floating-button"
+      }
+    },
+    {
+      "type": "number",
+      "category": "z-index",
+      "name": "zIndexSkipLink",
+      "value": "100",
+      "meta": {
+        "friendlyName": "Z Index, Skip Link",
+        "sassVariable": "z-index-skip-link",
+        "CSSCustomProperty": "z-index-skip-link"
+      }
+    }
+  ]
+}
