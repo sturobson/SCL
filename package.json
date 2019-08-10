@@ -16,12 +16,15 @@
   "dependencies": {
     "@frctl/fractal": "^1.2.0-beta.2",
     "@frctl/nunjucks": "^2.0.1",
+    "chalk": "^2.4.2",
     "del": "^4.0.0",
     "express": "^4.16.4",
     "faker": "^4.1.0",
     "gulp": "^4.0.0",
     "http-proxy": "^1.17.0",
-    "request-promise": "^4.2.4"
+    "request-promise": "^4.2.4",
+    "yeoman-generator": "^3.2.0",
+    "yosay": "^2.0.2"
   },
   "devDependencies": {
     "backstopjs": "^3.8.8",
@@ -36,6 +39,7 @@
     "gulp-replace-path": "^0.4.0",
     "gulp-sass-glob": "^1.0.9",
     "gulp-serve": "^1.4.0",
+    "gulp-shell": "^0.7.1",
     "gulp-theo": "^2.0.0",
     "gulp-util": "^3.0.8",
     "lerna": "^3.13.1",

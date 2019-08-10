@@ -11,6 +11,7 @@ const fractal           = require('./fractal.js');
 const logger            = fractal.cli.console;
 const path              = require('path');
 const rename            = require("gulp-rename");
+const shell             = require('gulp-shell');
 
 // Sass and CSS Stuff
 const sass              = require('gulp-dart-sass');
@@ -36,13 +37,14 @@ const reload            = browserSync.reload;
 // Configuration
 // -----------------------------------------------------------------------------
 
-// Sass and CSS Configarables
-
 
 // -----------------------------------------------------------------------------
-// Design Tokens Tasks
+// Design Tokens
 // -----------------------------------------------------------------------------
-theo.registerTransform("web", ["color/hex"]);
+
+// -----------------------------------------------------------------------------
+// Design Tokens Template
+
 
 const theoGeneratedFileWarning = `// This file has been dynamically generated from design tokens
 // Please do NOT edit directly.`;
@@ -87,8 +89,12 @@ ${theoSourceTokenLocation}
 }
 `;
 
-theo.registerFormat( "scss",`${theoGeneratedSassTemplate}`);
+// -----------------------------------------------------------------------------
+// Design Token Formats
 
+theo.registerFormat( "scss",`${theoGeneratedSassTemplate}`);
+theo.registerFormat( "map.scss",`${theoGeneratedMapTemplate}`);
+theo.registerFormat( "custom-properties.scss",`${theoGeneratedPropertiesTemplate}`);
 theo.registerFormat('typography-map', result => {
   let { category, type } = result
     .get('props')
@@ -112,6 +118,15 @@ ${result
 );
   `;
 });
+
+// -----------------------------------------------------------------------------
+// Design Token Transforms
+
+theo.registerTransform("web", ["color/hex"]);
+
+
+// -----------------------------------------------------------------------------
+// Design Token Tasks
 
 
 gulp.task('tokens:variables', () =>
@@ -160,8 +175,6 @@ gulp.task('tokens:documentation', () =>
     .pipe(gulp.dest('./design-tokens/dist/documentation'))
 );
 
-theo.registerFormat( "map.scss",`${theoGeneratedMapTemplate}`);
-
 gulp.task('tokens:maps', () =>
   gulp.src(['./design-tokens/global/*.yml', '!./design-tokens/global/typography.yml', '!./design-tokens/global/font-family.yml'])
     .pipe(theoG({
@@ -171,8 +184,6 @@ gulp.task('tokens:maps', () =>
     .pipe(gulp.dest('./design-tokens/dist/sass/maps'))
 );
 
-theo.registerFormat( "custom-properties.scss",`${theoGeneratedPropertiesTemplate}`);
-
 gulp.task('tokens:props', () =>
   gulp.src(['./design-tokens/global/*.yml', '!./design-tokens/global/typography.yml'])
     .pipe(theoG({
@@ -181,6 +192,7 @@ gulp.task('tokens:props', () =>
     }))
     .pipe(gulp.dest('./design-tokens/dist/sass/custom-properties'))
 );
+
 
 gulp.task('tokens', gulp.parallel(
   'tokens:maps', 'tokens:variables', 'tokens:documentation', 'tokens:props', 'tokens:globalVariables', 'tokens:typographic-scale'
@@ -234,6 +246,8 @@ gulp.task('frctlBuild', function () {
     logger.success('Fractal build completed!');
   });
 });
+
+
 // -----------------------------------------------------------------------------
 //  Watch Tasks
 // -----------------------------------------------------------------------------
@@ -258,9 +272,10 @@ gulp.task('watchTokens', function(done) {
 // Default Tasks
 // -----------------------------------------------------------------------------
 
-
 gulp.task('watch', gulp.parallel('watchCSS', 'watchJS', 'watchTokens'));
 
 gulp.task('dev', gulp.series('css', 'frctlStart', 'watch'));
 
 gulp.task('build', gulp.series('css', 'frctlBuild'));
+
+gulp.task('create-component', shell.task( ['yo ./tools/component-generator'] ));
