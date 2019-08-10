@@ -72,14 +72,17 @@
   --color-grey--800: #424242;
   --color-grey--900: #212121;
   --color-black: #000000;
-  --color-white: #ffffff; }
+  --color-white: #ffffff;
+}
 
 /* a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 */
 /* a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 */
 .scl-example {
-  margin: 0 32px 24px; }
-  .scl-example > *:not(:first-of-type) {
-    margin-left: 12px; }
+  margin: 0 32px 24px;
+}
+.scl-example > *:not(:first-of-type) {
+  margin-left: 12px;
+}
 
 /* Base Colours */
 /* Primary Colours */
@@ -96,7 +99,8 @@ button {
   font-size: 1rem;
   line-height: 1;
   margin: 0;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 .scl-button {
   font-size: 1em;
@@ -106,50 +110,66 @@ button {
   border: 1px solid #424242;
   color: #FFFFFF;
   transition: all linear 200ms;
-  padding: 1rem 1.25rem; }
-  .scl-button:hover, .scl-button:focus {
-    background-color: #eeeeee;
-    color: #000000; }
-  .scl-button--small {
-    padding: 0.25em 1rem; }
-  .scl-button--large {
-    padding: 1.25rem 1.25rem; }
-  .scl-button--extra-large {
-    padding: 1.5rem 1.5rem; }
-  .scl-button--rounded {
-    border-radius: 0.5em; }
-  .scl-button--primary {
-    background-color: #2196f3;
-    border: 1px solid #1565c0;
-    color: #FFFFFF; }
-    .scl-button--primary:hover, .scl-button--primary:focus {
-      background-color: #90caf9;
-      color: #000000; }
-  .scl-button--secondary {
-    background-color: #673ab7;
-    border: 1px solid #4527a0;
-    color: #FFFFFF; }
-    .scl-button--secondary:hover, .scl-button--secondary:focus {
-      background-color: #b39ddb;
-      color: #FFFFFF; }
-  .scl-button--tertiary {
-    background-color: #4caf50;
-    border: 1px solid #2e7d32;
-    color: #FFFFFF; }
-    .scl-button--tertiary:hover, .scl-button--tertiary:focus {
-      background-color: #a5d6a7;
-      color: #000000; }
-  .scl-button--accent {
-    background-color: #ff9800;
-    border: 1px solid #ef6c00;
-    color: #424242; }
-    .scl-button--accent:hover, .scl-button--accent:focus {
-      background-color: #ffcc80;
-      color: #000000; }
-  .scl-button:active {
-    transform: translateY(1px);
-    position: relative; }
-  .scl-button:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-    pointer-events: none; }
+  padding: 1rem 1.25rem;
+}
+.scl-button:hover, .scl-button:focus {
+  background-color: #eeeeee;
+  color: #000000;
+}
+.scl-button--small {
+  padding: 0.25em 1rem;
+}
+.scl-button--large {
+  padding: 1.25rem 1.25rem;
+}
+.scl-button--extra-large {
+  padding: 1.5rem 1.5rem;
+}
+.scl-button--rounded {
+  border-radius: 0.5em;
+}
+.scl-button--primary {
+  background-color: #2196f3;
+  border: 1px solid #1565c0;
+  color: #FFFFFF;
+}
+.scl-button--primary:hover, .scl-button--primary:focus {
+  background-color: #90caf9;
+  color: #000000;
+}
+.scl-button--secondary {
+  background-color: #673ab7;
+  border: 1px solid #4527a0;
+  color: #FFFFFF;
+}
+.scl-button--secondary:hover, .scl-button--secondary:focus {
+  background-color: #b39ddb;
+  color: #FFFFFF;
+}
+.scl-button--tertiary {
+  background-color: #4caf50;
+  border: 1px solid #2e7d32;
+  color: #FFFFFF;
+}
+.scl-button--tertiary:hover, .scl-button--tertiary:focus {
+  background-color: #a5d6a7;
+  color: #000000;
+}
+.scl-button--accent {
+  background-color: #ff9800;
+  border: 1px solid #ef6c00;
+  color: #424242;
+}
+.scl-button--accent:hover, .scl-button--accent:focus {
+  background-color: #ffcc80;
+  color: #000000;
+}
+.scl-button:active {
+  transform: translateY(1px);
+  position: relative;
+}
+.scl-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
