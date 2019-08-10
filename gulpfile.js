@@ -13,16 +13,16 @@ const path              = require('path');
 const rename            = require("gulp-rename");
 
 // Sass and CSS Stuff
-const sass              = require('gulp-sass');
+const sass              = require('gulp-dart-sass');
 const notify            = require("gulp-notify");
 
 // JS Things
 const concat            = require('gulp-concat');
 
 // Design Tokens
-const theoG = require('gulp-theo');
-const theo = require('theo');
-const componentPath = path.resolve(__dirname, 'src' );
+const theoG             = require('gulp-theo');
+const theo              = require('theo');
+const componentPath     = path.resolve(__dirname, 'src' );
 
 // Local Server Stuff
 const browserSync       = require('browser-sync').create();
