@@ -4,10 +4,8 @@ var yosay = require('yosay');
 var path = require('path');
 var config = require(path.resolve('.','package.json'));
 
-config.vfConfig = config.vfConfig || [];
-vfName = config.vfConfig.vfName || "Visual Framework 2.0";
-vfNamespace = config.vfConfig.vfNamespace || "vf-";
-vfComponentPath = config.vfConfig.vfComponentPath || path.resolve(__dirname, '../../components');
+config.Config = config.Config || [];
+ComponentPath = config.Config.ComponentPath || path.resolve(__dirname, '../../components');
 
 module.exports = class extends Generator {
   prompting() {
@@ -22,24 +20,11 @@ module.exports = class extends Generator {
       chalk.blue.bold("  \___/(____)\_)__)(____)(__\_)\_/\_/(__) \__/(__\_)   \n")
     ));
 
-    var componentType = ['element', 'block', 'container', 'grid', 'boilerplate'];
-    if (vfNamespace != 'vf-') {
-      var DepartmentType = [vfName, 'VF Global'];
-    } else {
-      var DepartmentType = [vfName];
-    }
-
     var prompts = [{
-      type: 'list',
-      name: 'type',
-      required: true,
-      message: 'What type of component is this?',
-      choices: componentType
-    }, {
       type: 'input',
       name: 'componentName',
       required: true,
-      message: 'What\'s the name of your component? (all lowercase, a hyphen instead of space, will be prefixed with your project\'s namespace.)',
+      message: 'What\'s the name of your component?',
       description: 'Component name'
     }, {
       type: 'confirm',
@@ -55,17 +40,9 @@ module.exports = class extends Generator {
 
   writing() {
 
-    switch (this.props.dept) {
-      case vfName:
-      var namespace = vfNamespace;
-      break;
-      case "VF Global":
-      var namespace = "vf-";
-      break;
-    }
     var patternType = this.props.type;
-    var totalPath = vfComponentPath + '/' + namespace + this.props.componentName + "/";
-    var fileName = namespace + this.props.componentName;
+    var totalPath = ComponentPath + '/' + this.props.componentName + "/";
+    var fileName = this.props.componentName;
 
     var outputFile = fileName + '.njk';
     this.fs.copyTpl(
@@ -88,6 +65,15 @@ module.exports = class extends Generator {
     var outputFile = fileName + '.variables.scss';
     this.fs.copyTpl(
       this.templatePath('_component.variables.scss'),
+      this.destinationPath(totalPath + outputFile),
+      {
+        componentName: fileName
+      }
+    );
+
+    var outputFile = fileName + '.mixes.scss';
+    this.fs.copyTpl(
+      this.templatePath('_component.mixes.scss'),
       this.destinationPath(totalPath + outputFile),
       {
         componentName: fileName
@@ -122,14 +108,6 @@ module.exports = class extends Generator {
     );
 
     this.fs.copyTpl(
-      this.templatePath('_.npmignore'),
-      this.destinationPath(totalPath + '.npmignore'),
-      {
-        componentName: fileName
-      }
-    );
-
-    this.fs.copyTpl(
       this.templatePath('_CHANGELOG.md'),
       this.destinationPath(totalPath + 'CHANGELOG.md'),
       {
@@ -143,8 +121,18 @@ module.exports = class extends Generator {
         this.destinationPath(totalPath + 'package.json'),
         {
           componentName: fileName,
-          componentHomepage: config.vfConfig.vfHomepage,
+          componentHomepage: config.Config.Homepage,
           componentStylesheet: fileName + '.scss'
+        }
+      );
+    }
+
+    if (this.props.npm) {
+      this.fs.copyTpl(
+        this.templatePath('_.npmignore'),
+        this.destinationPath(totalPath + '.npmignore'),
+        {
+          componentName: fileName
         }
       );
     }
