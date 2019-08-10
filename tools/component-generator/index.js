@@ -1,5 +1,4 @@
 var Generator = require('yeoman-generator');
-var chalk = require('chalk');
 var yosay = require('yosay');
 var path = require('path');
 var config = require(path.resolve('.','package.json'));
@@ -10,14 +9,7 @@ ComponentPath = config.Config.ComponentPath || path.resolve(__dirname, '../../co
 module.exports = class extends Generator {
   prompting() {
     this.log((
-      chalk.blue.bold("   ___  __   _  _  ____   __   __ _  ____  __ _  ____  \n") +
-      chalk.blue.bold("  / __)/  \ ( \/ )(  _ \ /  \ (  ( \(  __)(  ( \(_  _) \n") +
-      chalk.blue.bold(" ( (__(  O )/ \/ \ ) __/(  O )/    / ) _) /    /  )(   \n") +
-      chalk.blue.bold("  \___)\__/ \_)(_/(__)   \__/ \_)__)(____)\_)__) (__)  \n") +
-      chalk.blue.bold("   ___  ____  __ _  ____  ____   __  ____  __  ____    \n") +
-      chalk.blue.bold("  / __)(  __)(  ( \(  __)(  _ \ / _\(_  _)/  \(  _ \   \n") +
-      chalk.blue.bold(" ( (_ \ ) _) /    / ) _)  )   //    \ )( (  O ))   /   \n") +
-      chalk.blue.bold("  \___/(____)\_)__)(____)(__\_)\_/\_/(__) \__/(__\_)   \n")
+      " Component Generator \n"
     ));
 
     var prompts = [{
