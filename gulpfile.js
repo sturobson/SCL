@@ -115,7 +115,7 @@ ${result
 
 
 gulp.task('tokens:variables', () =>
-  gulp.src('./Design-Tokens/patterns/*.yml')
+  gulp.src('./Design-Tokens/components/*.yml')
     .pipe(theoG({
       transform: { type: 'web' },
       format: { type: 'scss' }
@@ -124,7 +124,7 @@ gulp.task('tokens:variables', () =>
        path.dirname += "/"+path.basename;
        path.extname = ".variables.scss";
    }))
-   .pipe(gulp.dest('./patterns'))
+   .pipe(gulp.dest('./components'))
 );
 
 gulp.task('tokens:typographic-scale', () =>
@@ -194,9 +194,9 @@ gulp.task('tokens', gulp.parallel(
 gulp.task('css', function() {
   return gulp.src('./assets/scss/styles.scss')
   .pipe(sass({
-    includePaths: [ path.resolve(__dirname, 'patterns') ],
+    includePaths: [ path.resolve(__dirname, 'components') ],
     sourcemap: true,
-    sourcemapPath: './patterns/',
+    sourcemapPath: './components/',
   })).on('error', notify.onError(function (error) {return "Problem file : " + error.message;}))
   .pipe(browserSync.stream())
   .pipe(gulp.dest('./public/css'));
@@ -207,7 +207,7 @@ gulp.task('css', function() {
 // -----------------------------------------------------------------------------
 
 gulp.task('scripts', function() {
-  return gulp.src(['./patterns/**/*.js'])
+  return gulp.src(['./components/**/*.js'])
   .pipe(concat('scripts.js'))
   .pipe(gulp.dest('./public/javascript/'));
 });
@@ -239,17 +239,17 @@ gulp.task('frctlBuild', function () {
 // -----------------------------------------------------------------------------
 
 gulp.task('watchCSS', function(done) {
-  gulp.watch(['./assets/**/*.scss', './patterns/**/*.scss'], gulp.series('css')).on('change', reload);
+  gulp.watch(['./assets/**/*.scss', './components/**/*.scss'], gulp.series('css')).on('change', reload);
   done();
 });
 
 gulp.task('watchJS', function(done) {
-  gulp.watch('./patterns/blocks/**/*.js', gulp.series('scripts')).on('change', reload);
+  gulp.watch('./components/blocks/**/*.js', gulp.series('scripts')).on('change', reload);
   done();
 });
 
 gulp.task('watchTokens', function(done) {
-  gulp.watch(['./Design-Tokens/theme/*.alias.yml', './Design-Tokens/patterns/*.yml'], gulp.series('tokens:variables')).on('change', reload);
+  gulp.watch(['./Design-Tokens/theme/*.alias.yml', './Design-Tokens/components/*.yml'], gulp.series('tokens:variables')).on('change', reload);
   done();
 });
 

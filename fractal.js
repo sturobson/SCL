@@ -27,7 +27,7 @@ const myCustomisedTheme = mandelbrot({
 /* Configure components */
 
 fractal.components.set('title', 'Pattern Library');
-fractal.components.set('path', `${__dirname}/patterns`);
+fractal.components.set('path', `${__dirname}/components`);
 fractal.components.set('default.preview', `@preview`);
 fractal.components.set('ext', '.njk'); // look for files with a .nunj file extension
 fractal.components.engine('@frctl/nunjucks'); /* set as the default template engine for components */
