@@ -115,7 +115,7 @@ ${result
 
 
 gulp.task('tokens:variables', () =>
-  gulp.src('./Design-Tokens/components/*.yml')
+  gulp.src('./design-tokens/components/*.yml')
     .pipe(theoG({
       transform: { type: 'web' },
       format: { type: 'scss' }
@@ -128,7 +128,7 @@ gulp.task('tokens:variables', () =>
 );
 
 gulp.task('tokens:typographic-scale', () =>
-  gulp.src('./Design-Tokens/global/typography.yml')
+  gulp.src('./design-tokens/global/typography.yml')
     .pipe(theoG({
       transform: { type: 'web' },
       format: { type: 'typography-map' }
@@ -136,11 +136,11 @@ gulp.task('tokens:typographic-scale', () =>
     .pipe(rename(function (path) {
       path.extname = ".map.scss";
     }))
-    .pipe(gulp.dest('./Design-Tokens/dist/sass/maps'))
+    .pipe(gulp.dest('./design-tokens/dist/sass/maps'))
 );
 
 gulp.task('tokens:globalVariables', () =>
-  gulp.src(['./Design-Tokens/global/*.yml', '!./Design-Tokens/global/typography.yml'])
+  gulp.src(['./design-tokens/global/*.yml', '!./design-tokens/global/typography.yml'])
     .pipe(theoG({
       transform: { type: 'web' },
       format: { type: 'scss' }
@@ -148,38 +148,38 @@ gulp.task('tokens:globalVariables', () =>
     .pipe(rename(function (path) {
        path.extname = ".variables.scss";
    }))
-   .pipe(gulp.dest('./Design-Tokens/dist/sass/variables'))
+   .pipe(gulp.dest('./design-tokens/dist/sass/variables'))
 );
 
 gulp.task('tokens:documentation', () =>
-  gulp.src(['./Design-Tokens/global/*.yml'])
+  gulp.src(['./design-tokens/global/*.yml'])
     .pipe(theoG({
       transform: { type: 'web', includeMeta: true },
       format: { type: 'ios.json' }
     }))
-    .pipe(gulp.dest('./Design-Tokens/dist/documentation'))
+    .pipe(gulp.dest('./design-tokens/dist/documentation'))
 );
 
 theo.registerFormat( "map.scss",`${theoGeneratedMapTemplate}`);
 
 gulp.task('tokens:maps', () =>
-  gulp.src(['./Design-Tokens/global/*.yml', '!./Design-Tokens/global/typography.yml', '!./Design-Tokens/global/font-family.yml'])
+  gulp.src(['./design-tokens/global/*.yml', '!./design-tokens/global/typography.yml', '!./design-tokens/global/font-family.yml'])
     .pipe(theoG({
       transform: { type: 'web' },
       format: { type: 'map.scss' }
     }))
-    .pipe(gulp.dest('./Design-Tokens/dist/sass/maps'))
+    .pipe(gulp.dest('./design-tokens/dist/sass/maps'))
 );
 
 theo.registerFormat( "custom-properties.scss",`${theoGeneratedPropertiesTemplate}`);
 
 gulp.task('tokens:props', () =>
-  gulp.src(['./Design-Tokens/global/*.yml', '!./Design-Tokens/global/typography.yml'])
+  gulp.src(['./design-tokens/global/*.yml', '!./design-tokens/global/typography.yml'])
     .pipe(theoG({
       transform: { type: 'web' },
       format: { type: 'custom-properties.scss' }
     }))
-    .pipe(gulp.dest('./Design-Tokens/dist/sass/custom-properties'))
+    .pipe(gulp.dest('./design-tokens/dist/sass/custom-properties'))
 );
 
 gulp.task('tokens', gulp.parallel(
@@ -249,7 +249,7 @@ gulp.task('watchJS', function(done) {
 });
 
 gulp.task('watchTokens', function(done) {
-  gulp.watch(['./Design-Tokens/theme/*.alias.yml', './Design-Tokens/components/*.yml'], gulp.series('tokens:variables')).on('change', reload);
+  gulp.watch(['./design-tokens/theme/*.alias.yml', './design-tokens/components/*.yml'], gulp.series('tokens:variables')).on('change', reload);
   done();
 });
 
