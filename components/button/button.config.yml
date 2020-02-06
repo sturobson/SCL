@@ -1,0 +1,60 @@
+title: Button
+label: Button
+status: prototype
+collated: true
+context:
+  demonstration: true
+  button_label: Default
+
+  interactions:
+    - item:
+      type: "hover"
+    - item:
+      type: "active"
+    - item:
+      type: "focus"
+
+variants:
+  - name: default
+    hidden: true
+
+
+  - name: Primary
+    context:
+      theme: primary
+
+  - name: Secondary
+    context:
+      theme: secondary
+
+  - name: Tertiary
+    context:
+      theme: tertiary
+
+  - name: Accent
+    context:
+      theme: accent
+
+  - name: Rounded
+    context:
+      rounded: rounded
+
+  - name: Block
+    context:
+      outline: block
+
+  - name: Small
+    context:
+      size: small
+
+  - name: Regular
+    context:
+      size: Regular
+
+  - name: Large
+    context:
+      size: large
+
+  - name: Extra Large
+    context:
+      size: extra-large

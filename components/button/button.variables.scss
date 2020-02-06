@@ -1,0 +1,40 @@
+// This file has been dynamically generated from design tokens
+// Please do NOT edit directly.
+// Source: ../design-tokens/components/button.yml
+
+/* Base Colours */
+$base-button-background-color: #9e9e9e !default;
+$base-button-border-color: #424242 !default;
+$base-button-background-color--hover: #eeeeee !default;
+/* Primary Colours */
+$primary-button-background-color: #2196f3 !default;
+$primary-button-background-color--hover: #90caf9 !default;
+$primary-button-border-color: #1565c0 !default;
+/* Secondary Colours */
+$secondary-button-background-color: #673ab7 !default;
+$secondary-button-border-color: #4527a0 !default;
+$secondary-button-background-color--hover: #b39ddb !default;
+/* Tertiary Colours */
+$tertiary-button-background-color: #4caf50 !default;
+$tertiary-button-border-color: #2e7d32 !default;
+$tertiary-button-background-color--hover: #a5d6a7 !default;
+/* Accent Colours */
+$accent-button-background-color: #ff9800 !default;
+$accent-button-border-color: #ef6c00 !default;
+$accent-button-background-color--hover: #ffcc80 !default;
+/* Type Colours */
+$button-text-color: #FFFFFF !default;
+$button-text-color-alt: #424242 !default;
+$button-text-color--hover: #FFFFFF !default;
+$button-text-color-alt--hover: #000000 !default;
+/* Spacing */
+$button-padding--sm: .25em 1rem !default;
+$button-padding: 1rem 1.25rem !default;
+$button-padding--lg: 1.25rem 1.25rem !default;
+$button-padding--xl: 1.5rem 1.5rem !default;
+/* Rounded */
+$button--rounded: 0.5em !default;
+/* Extra Large Rounded */
+$button--rounded-xl: 1em !default;
+$button--disabled: 0.5 !default;
+$button-speed: 200ms !default;
