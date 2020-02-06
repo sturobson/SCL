@@ -1,0 +1,33 @@
+---
+title: Colour Palette
+label: Colours
+---
+<main class="vf-swatches">
+{% for item in colors.properties %}
+
+<article class="vf-swatch">
+  <section class="vf-swatch__details">
+    <h3 class="vf-swatch__colour-name">{{ item.meta.friendlyName }}</h3>
+    <p class="vf-swatch__colour-hex"><span class="vf-swatch__meta">Hex: </span>
+      <pre><code>{{ item.value }}</code></pre></p>
+    <p class="vf-swatch__sass-variable"><span class="vf-swatch__meta">Sass Variable: </span><pre><code>${{- item.meta.sassVariable }}</code></pre></p>
+    <p class="vf-swatch__sass-variable">
+      <span class="vf-swatch__meta">Sass Map: </span><pre><code>map-get($colors-map, {{ item.meta.sassVariable }})</code></pre>
+    </p>
+    <p class="vf-swatch__css-property">
+        <span class="vf-swatch__meta">CSS Custom Property: </span>
+        <pre><code>{{ item.meta.CSSCustomProperty }}</code></pre>
+      </p>
+    {% if item.meta.comment %}
+      <h4 class="vf-swatch__notes">notes:</h4>
+      <p class="vf-swatch__comment">
+        {{ item.meta.comment }}
+      </p>
+    {% endif %}
+  </section>
+  <div class="vf-swatch__colour" style="background-color: {{ item.value}};">
+  </div>
+</article>
+
+{% endfor %}
+</main>

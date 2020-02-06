@@ -1,0 +1,21 @@
+---
+title: Font Family
+label: Font Family
+---
+
+{% for item in family.properties %}
+  <h3 style="font-size: 1.777em; font-family: {{ item.value }};">{{ item.meta.friendlyName }}</h3>
+  <p>
+    <span class="vf-swatch__meta">Font Family: </span>
+    {{ item.value }}</p>
+    <p class="vf-swatch__sass-variable">
+      <span class="vf-swatch__meta">Sass Variable: </span>
+      `${{- item.meta.sassVariable }}`
+    </p>
+    <p class="vf-swatch__css-property"><span class="vf-swatch__meta">CSS Custom Property: </span>`--{{ item.meta.CSSCustomProperty }}`</p>
+
+  <p>
+    Glyphs:
+    <span style="font-size: 1.333em; font-family: {{ item.value }};">{{ item.comment }}</span>
+  </p>
+{% endfor %}
