@@ -1,0 +1,5 @@
+title: <%= componentName %>
+label: <%= componentName %>
+status: prototype
+
+context:

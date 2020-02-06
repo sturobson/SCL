@@ -1,0 +1,9 @@
+// <%= componentName %>
+
+@import '<%= componentName %>.variables.scss';
+
+.<%= componentName %> {
+
+}
+
+@import '<%= componentName %>.mixes.scss';
