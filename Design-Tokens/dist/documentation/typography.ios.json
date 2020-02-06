@@ -1,0 +1,132 @@
+{
+  "properties": [
+    {
+      "type": "tokens",
+      "category": "typography",
+      "name": "bodySmall",
+      "value": {
+        "fontSize": "0.75em",
+        "fontWeight": "600",
+        "lineHeight": "1.45"
+      },
+      "meta": {
+        "friendlyName": "Body, extra small",
+        "sassMap": "body--small",
+        "comment": null,
+        "pangram": "The five boxing wizards jump quickly."
+      }
+    },
+    {
+      "type": "tokens",
+      "category": "typography",
+      "name": "body",
+      "value": {
+        "fontSize": "1em",
+        "fontWeight": "400",
+        "lineHeight": "1.45"
+      },
+      "meta": {
+        "friendlyName": "Body",
+        "sassMap": "body",
+        "comment": null,
+        "pangram": "The five boxing wizards jump quickly."
+      }
+    },
+    {
+      "type": "tokens",
+      "category": "typography",
+      "name": "heading1",
+      "value": {
+        "fontSize": "4.209em",
+        "fontWeight": "700",
+        "lineHeight": "1.15"
+      },
+      "meta": {
+        "friendlyName": "Heading 1",
+        "sassMap": "heading--1",
+        "comment": null,
+        "pangram": "The five boxing wizards jump quickly."
+      }
+    },
+    {
+      "type": "tokens",
+      "category": "typography",
+      "name": "heading2",
+      "value": {
+        "fontSize": "3.157em",
+        "fontWeight": "700",
+        "lineHeight": "1.15"
+      },
+      "meta": {
+        "friendlyName": "Heading 2",
+        "sassMap": "heading--2",
+        "comment": null,
+        "pangram": "The five boxing wizards jump quickly."
+      }
+    },
+    {
+      "type": "tokens",
+      "category": "typography",
+      "name": "heading3",
+      "value": {
+        "fontSize": "2.369em",
+        "fontWeight": "700",
+        "lineHeight": "1.15"
+      },
+      "meta": {
+        "friendlyName": "Heading 3",
+        "sassMap": "heading--3",
+        "comment": null,
+        "pangram": "The five boxing wizards jump quickly."
+      }
+    },
+    {
+      "type": "tokens",
+      "category": "typography",
+      "name": "heading4",
+      "value": {
+        "fontSize": "1.777em",
+        "fontWeight": "700",
+        "lineHeight": "1.15"
+      },
+      "meta": {
+        "friendlyName": "Heading 4",
+        "sassMap": "heading--4",
+        "comment": null,
+        "pangram": "The five boxing wizards jump quickly."
+      }
+    },
+    {
+      "type": "tokens",
+      "category": "typography",
+      "name": "heading5",
+      "value": {
+        "fontSize": "1.333em",
+        "fontWeight": "700",
+        "lineHeight": "1.15"
+      },
+      "meta": {
+        "friendlyName": "Heading 5",
+        "sassMap": "heading--5",
+        "comment": null,
+        "pangram": "The five boxing wizards jump quickly."
+      }
+    },
+    {
+      "type": "tokens",
+      "category": "typography",
+      "name": "heading6",
+      "value": {
+        "fontSize": "1.333em",
+        "fontWeight": "700",
+        "lineHeight": "1.15"
+      },
+      "meta": {
+        "friendlyName": "Heading 6",
+        "sassMap": "heading--6",
+        "comment": null,
+        "pangram": "The five boxing wizards jump quickly."
+      }
+    }
+  ]
+}

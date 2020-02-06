@@ -1,0 +1,50 @@
+imports:
+  - "../aliases/z-index.yml"
+
+props:
+  - name: z-index-widget
+    value: '{!z-index-widget}'
+    meta:
+      friendlyName: Z Index, Widget
+      sassVariable: z-index-widget
+      CSSCustomProperty: z-index-widget
+  - name: z-index-navigation
+    value: '{!z-index-navigation}'
+    meta:
+      friendlyName: Z Index, Navigation
+      sassVariable: z-index-navigation
+      CSSCustomProperty: z-index-navigation
+  - name: z-index-banner
+    value: '{!z-index-banner}'
+    meta:
+      friendlyName: Z Index, Banner
+      sassVariable: z-index-banner
+      CSSCustomProperty: z-index-banner
+  - name: z-index-modal
+    value: '{!z-index-modal}'
+    meta:
+      friendlyName: Z Index, Modal
+      sassVariable: z-index-modal
+      CSSCustomProperty: z-index-modal
+  - name: z-index-sidebar
+    value: '{!z-index-sidebar}'
+    meta:
+      friendlyName: Z Index, Sidebar
+      sassVariable: z-index-sidebar
+      CSSCustomProperty: z-index-sidebar
+  - name: z-index-floating-button
+    value: '{!z-index-floating-button}'
+    meta:
+      friendlyName: Z Index, Floating Button
+      sassVariable: z-index-floating-button
+      CSSCustomProperty: z-index-floating-button
+  - name: z-index-skip-link
+    value: '{!z-index-skip-link}'
+    meta:
+      friendlyName: Z Index, Skip Link
+      sassVariable: z-index-skip-link
+      CSSCustomProperty: z-index-skip-link
+
+global:
+  type: number
+  category: z-index

@@ -1,0 +1,26 @@
+{
+  "properties": [
+    {
+      "type": "number",
+      "category": "opacity",
+      "name": "opacityOverlay",
+      "value": "0.8",
+      "meta": {
+        "friendlyName": "Opacity, Overlay",
+        "sassVariable": "opacity--overlay",
+        "CSSCustomProperty": "opacity--overlay"
+      }
+    },
+    {
+      "type": "number",
+      "category": "opacity",
+      "name": "opacityDisabled",
+      "value": "0.5",
+      "meta": {
+        "friendlyName": "Opacity, Disabled",
+        "sassVariable": "opacity--disabled",
+        "CSSCustomProperty": "opacity--disabled"
+      }
+    }
+  ]
+}

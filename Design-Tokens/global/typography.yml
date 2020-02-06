@@ -1,0 +1,91 @@
+imports:
+  - "../aliases/typography.alias.yml"
+
+
+props:
+  - name: body--small
+    value:
+      fontSize: '{!font-size--text-small}'
+      fontWeight: '{!font-weight--600}'
+      lineHeight: '{!font-line-height--text}'
+    meta:
+      friendlyName: Body, extra small
+      sassMap: body--small
+      comment:
+      pangram: "The five boxing wizards jump quickly."
+  - name: body
+    value:
+      fontSize: '{!font-size--text}'
+      fontWeight: '{!font-weight--400}'
+      lineHeight: '{!font-line-height--text}'
+    meta:
+      friendlyName: Body
+      sassMap: body
+      comment:
+      pangram: "The five boxing wizards jump quickly."
+
+
+  - name: heading--1
+    value:
+      fontSize: '{!font-size--heading-1}'
+      fontWeight: '{!font-weight--700}'
+      lineHeight: '{!font-line-height--heading}'
+    meta:
+      friendlyName: Heading 1
+      sassMap: heading--1
+      comment:
+      pangram: "The five boxing wizards jump quickly."
+  - name: heading--2
+    value:
+      fontSize: '{!font-size--heading-2}'
+      fontWeight: '{!font-weight--700}'
+      lineHeight: '{!font-line-height--heading}'
+    meta:
+      friendlyName: Heading 2
+      sassMap: heading--2
+      comment:
+      pangram: "The five boxing wizards jump quickly."
+  - name: heading--3
+    value:
+      fontSize: '{!font-size--heading-3}'
+      fontWeight: '{!font-weight--700}'
+      lineHeight: '{!font-line-height--heading}'
+    meta:
+      friendlyName: Heading 3
+      sassMap: heading--3
+      comment:
+      pangram: "The five boxing wizards jump quickly."
+  - name: heading--4
+    value:
+      fontSize: '{!font-size--heading-4}'
+      fontWeight: '{!font-weight--700}'
+      lineHeight: '{!font-line-height--heading}'
+    meta:
+      friendlyName: Heading 4
+      sassMap: heading--4
+      comment:
+      pangram: "The five boxing wizards jump quickly."
+  - name: heading--5
+    value:
+      fontSize: '{!font-size--heading-5}'
+      fontWeight: '{!font-weight--700}'
+      lineHeight: '{!font-line-height--heading}'
+    meta:
+      friendlyName: Heading 5
+      sassMap: heading--5
+      comment:
+      pangram: "The five boxing wizards jump quickly."
+  - name: heading--6
+    value:
+      fontSize: '{!font-size--heading-6}'
+      fontWeight: '{!font-weight--700}'
+      lineHeight: '{!font-line-height--heading}'
+    meta:
+      friendlyName: Heading 6
+      sassMap: heading--6
+      comment:
+      pangram: "The five boxing wizards jump quickly."
+
+global:
+  type: tokens
+  category: typography

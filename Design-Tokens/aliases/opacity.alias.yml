@@ -1,0 +1,7 @@
+aliases:
+  opacity--overlay: 0.8
+  opacity--disabled: 0.5
+
+global:
+  type: number
+  category: opacity

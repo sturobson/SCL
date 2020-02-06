@@ -1,0 +1,59 @@
+{
+  "properties": [
+    {
+      "type": "number",
+      "category": "border-radius",
+      "name": "borderRadiusCircle",
+      "value": "50%",
+      "meta": {
+        "friendlyName": "Border Radius, Circle",
+        "sassVariable": "border-radius--circle",
+        "CSSCustomProperty": "border-radius--circle"
+      }
+    },
+    {
+      "type": "number",
+      "category": "border-radius",
+      "name": "borderRadiusS",
+      "value": "0.25em",
+      "meta": {
+        "friendlyName": "Border Radius, Small",
+        "sassVariable": "border-radius--s",
+        "CSSCustomProperty": "border-radius--s"
+      }
+    },
+    {
+      "type": "number",
+      "category": "border-radius",
+      "name": "borderRadiusR",
+      "value": "0.5em",
+      "meta": {
+        "friendlyName": "Border Radius, Regular",
+        "sassVariable": "border-radius--r",
+        "CSSCustomProperty": "border-radius--r"
+      }
+    },
+    {
+      "type": "number",
+      "category": "border-radius",
+      "name": "borderRadiusL",
+      "value": "0.75em",
+      "meta": {
+        "friendlyName": "Border Radius, Large",
+        "sassVariable": "border-radius--l",
+        "CSSCustomProperty": "border-radius--l"
+      }
+    },
+    {
+      "type": "number",
+      "category": "border-radius",
+      "name": "borderRadiusXl",
+      "value": "1em",
+      "meta": {
+        "friendlyName": "Border Radius, Extra Large",
+        "sassVariable": "border-radius--xl",
+        "CSSCustomProperty": "border-radius--xl"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+aliases:
+  spacing--0: 0
+  spacing--xs: .25em
+  spacing--s: .5em
+  spacing--r: 1rem
+  spacing--l: 1.25rem
+  spacing--xl: 1.5rem
+  spacing--xxl: 2rem
+
+global:
+  type: number
+  category: spacing

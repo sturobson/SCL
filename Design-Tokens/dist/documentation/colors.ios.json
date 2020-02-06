@@ -1,0 +1,892 @@
+{
+  "properties": [
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRed100",
+      "value": "#ffcdd2",
+      "meta": {
+        "friendlyName": "Red, 100",
+        "sassVariable": "color-red--100",
+        "CSSCustomProperty": "--color-red--100",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRed200",
+      "value": "#ef9a9a",
+      "meta": {
+        "friendlyName": "Red, 200",
+        "sassVariable": "color-red--200",
+        "CSSCustomProperty": "--color-red--200",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRed300",
+      "value": "#e57373",
+      "meta": {
+        "friendlyName": "Red, 300",
+        "sassVariable": "color-red--300",
+        "CSSCustomProperty": "--color-red--300",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRed400",
+      "value": "#ef5350",
+      "meta": {
+        "friendlyName": "Red, 400",
+        "sassVariable": "color-red--400",
+        "CSSCustomProperty": "--color-red--400",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRed500",
+      "value": "#f44336",
+      "meta": {
+        "friendlyName": "Red, 500",
+        "sassVariable": "color-red--500",
+        "CSSCustomProperty": "--color-red--500",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRed600",
+      "value": "#e53935",
+      "meta": {
+        "friendlyName": "Red, 600",
+        "sassVariable": "color-red--600",
+        "CSSCustomProperty": "--color-red--600",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRed700",
+      "value": "#d32f2f",
+      "meta": {
+        "friendlyName": "Red, 700",
+        "sassVariable": "color-red--700",
+        "CSSCustomProperty": "--color-red--700",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRed800",
+      "value": "#c62828",
+      "meta": {
+        "friendlyName": "Red, 800",
+        "sassVariable": "color-red--800",
+        "CSSCustomProperty": "--color-red--800",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorRed900",
+      "value": "#b71c1c",
+      "meta": {
+        "friendlyName": "Red, 900",
+        "sassVariable": "color-red--900",
+        "CSSCustomProperty": "--color-red--900",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPink100",
+      "value": "#f8bbd0",
+      "meta": {
+        "friendlyName": "Pink, 100",
+        "sassVariable": "color-pink--100",
+        "CSSCustomProperty": "--color-pink--100",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPink200",
+      "value": "#f48fb1",
+      "meta": {
+        "friendlyName": "Pink, 200",
+        "sassVariable": "color-pink--200",
+        "CSSCustomProperty": "--color-pink--200",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPink300",
+      "value": "#f06292",
+      "meta": {
+        "friendlyName": "Pink, 300",
+        "sassVariable": "color-pink--300",
+        "CSSCustomProperty": "--color-pink--300",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPink400",
+      "value": "#ec407a",
+      "meta": {
+        "friendlyName": "Pink, 400",
+        "sassVariable": "color-pink--400",
+        "CSSCustomProperty": "--color-pink--400",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPink500",
+      "value": "#e91e63",
+      "meta": {
+        "friendlyName": "Pink, 500",
+        "sassVariable": "color-pink--500",
+        "CSSCustomProperty": "--color-pink--500",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPink600",
+      "value": "#d81b60",
+      "meta": {
+        "friendlyName": "Pink, 600",
+        "sassVariable": "color-pink--600",
+        "CSSCustomProperty": "--color-pink--600",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPink700",
+      "value": "#c2185b",
+      "meta": {
+        "friendlyName": "Pink, 700",
+        "sassVariable": "color-pink--700",
+        "CSSCustomProperty": "--color-pink--700",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPink800",
+      "value": "#ad1457",
+      "meta": {
+        "friendlyName": "Pink, 800",
+        "sassVariable": "color-pink--800",
+        "CSSCustomProperty": "--color-pink--800",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPink900",
+      "value": "#880e4f",
+      "meta": {
+        "friendlyName": "Pink, 900",
+        "sassVariable": "color-pink--900",
+        "CSSCustomProperty": "--color-pink--900",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurple100",
+      "value": "#d1c4e9",
+      "meta": {
+        "friendlyName": "Purple, 100",
+        "sassVariable": "color-purple--100",
+        "CSSCustomProperty": "--color-purple--100",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurple200",
+      "value": "#b39ddb",
+      "meta": {
+        "friendlyName": "Purple, 200",
+        "sassVariable": "color-purple--200",
+        "CSSCustomProperty": "--color-purple--200",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurple300",
+      "value": "#9575cd",
+      "meta": {
+        "friendlyName": "Purple, 300",
+        "sassVariable": "color-purple--300",
+        "CSSCustomProperty": "--color-purple--300",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurple400",
+      "value": "#7e57c2",
+      "meta": {
+        "friendlyName": "Purple, 400",
+        "sassVariable": "color-purple--400",
+        "CSSCustomProperty": "--color-purple--400",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurple500",
+      "value": "#673ab7",
+      "meta": {
+        "friendlyName": "Purple, 500",
+        "sassVariable": "color-purple--500",
+        "CSSCustomProperty": "--color-purple--500",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurple600",
+      "value": "#5e35b1",
+      "meta": {
+        "friendlyName": "Purple, 600",
+        "sassVariable": "color-purple--600",
+        "CSSCustomProperty": "--color-purple--600",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurple700",
+      "value": "#512da8",
+      "meta": {
+        "friendlyName": "Purple, 700",
+        "sassVariable": "color-purple--700",
+        "CSSCustomProperty": "--color-purple--700",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurple800",
+      "value": "#4527a0",
+      "meta": {
+        "friendlyName": "Purple, 800",
+        "sassVariable": "color-purple--800",
+        "CSSCustomProperty": "--color-purple--800",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorPurple900",
+      "value": "#311b92",
+      "meta": {
+        "friendlyName": "Purple, 900",
+        "sassVariable": "color-purple--900",
+        "CSSCustomProperty": "--color-purple--900",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlue100",
+      "value": "#bbdefb",
+      "meta": {
+        "friendlyName": "Blue, 100",
+        "sassVariable": "color-blue--100",
+        "CSSCustomProperty": "--color-blue--100",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlue200",
+      "value": "#90caf9",
+      "meta": {
+        "friendlyName": "Blue, 200",
+        "sassVariable": "color-blue--200",
+        "CSSCustomProperty": "--color-blue--200",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlue300",
+      "value": "#64b5f6",
+      "meta": {
+        "friendlyName": "Blue, 300",
+        "sassVariable": "color-blue--300",
+        "CSSCustomProperty": "--color-blue--300",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlue400",
+      "value": "#42a5f5",
+      "meta": {
+        "friendlyName": "Blue, 400",
+        "sassVariable": "color-blue--400",
+        "CSSCustomProperty": "--color-blue--400",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlue500",
+      "value": "#2196f3",
+      "meta": {
+        "friendlyName": "Blue, 500",
+        "sassVariable": "color-blue--500",
+        "CSSCustomProperty": "--color-blue--500",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlue600",
+      "value": "#1e88e5",
+      "meta": {
+        "friendlyName": "Blue, 600",
+        "sassVariable": "color-blue--600",
+        "CSSCustomProperty": "--color-blue--600",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlue700",
+      "value": "#1976d2",
+      "meta": {
+        "friendlyName": "Blue, 700",
+        "sassVariable": "color-blue--700",
+        "CSSCustomProperty": "--color-blue--700",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlue800",
+      "value": "#1565c0",
+      "meta": {
+        "friendlyName": "Blue, 800",
+        "sassVariable": "color-blue--800",
+        "CSSCustomProperty": "--color-blue--800",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlue900",
+      "value": "#0d47a1",
+      "meta": {
+        "friendlyName": "Blue, 900",
+        "sassVariable": "color-blue--900",
+        "CSSCustomProperty": "--color-blue--900",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreen100",
+      "value": "#c8e6c9",
+      "meta": {
+        "friendlyName": "Green, 100",
+        "sassVariable": "color-green--100",
+        "CSSCustomProperty": "--color-green--100",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreen200",
+      "value": "#a5d6a7",
+      "meta": {
+        "friendlyName": "Green, 200",
+        "sassVariable": "color-green--200",
+        "CSSCustomProperty": "--color-green--200",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreen300",
+      "value": "#81c784",
+      "meta": {
+        "friendlyName": "Green, 300",
+        "sassVariable": "color-green--300",
+        "CSSCustomProperty": "--color-green--300",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreen400",
+      "value": "#66bb6a",
+      "meta": {
+        "friendlyName": "Green, 400",
+        "sassVariable": "color-green--400",
+        "CSSCustomProperty": "--color-green--400",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreen500",
+      "value": "#4caf50",
+      "meta": {
+        "friendlyName": "Green, 500",
+        "sassVariable": "color-green--500",
+        "CSSCustomProperty": "--color-green--500",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreen600",
+      "value": "#43a047",
+      "meta": {
+        "friendlyName": "Green, 600",
+        "sassVariable": "color-green--600",
+        "CSSCustomProperty": "--color-green--600",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreen700",
+      "value": "#388e3c",
+      "meta": {
+        "friendlyName": "Green, 700",
+        "sassVariable": "color-green--700",
+        "CSSCustomProperty": "--color-green--700",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreen800",
+      "value": "#2e7d32",
+      "meta": {
+        "friendlyName": "Green, 800",
+        "sassVariable": "color-green--800",
+        "CSSCustomProperty": "--color-green--800",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGreen900",
+      "value": "#1b5e20",
+      "meta": {
+        "friendlyName": "Green, 900",
+        "sassVariable": "color-green--900",
+        "CSSCustomProperty": "--color-green--900",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellow100",
+      "value": "#fff9c4",
+      "meta": {
+        "friendlyName": "Yellow, 100",
+        "sassVariable": "color-yellow--100",
+        "CSSCustomProperty": "--color-yellow--100",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellow200",
+      "value": "#fff59d",
+      "meta": {
+        "friendlyName": "Yellow, 200",
+        "sassVariable": "color-yellow--200",
+        "CSSCustomProperty": "--color-yellow--200",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellow300",
+      "value": "#fff176",
+      "meta": {
+        "friendlyName": "Yellow, 300",
+        "sassVariable": "color-yellow--300",
+        "CSSCustomProperty": "--color-yellow--300",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellow400",
+      "value": "#ffee58",
+      "meta": {
+        "friendlyName": "Yellow, 400",
+        "sassVariable": "color-yellow--400",
+        "CSSCustomProperty": "--color-yellow--400",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellow500",
+      "value": "#ffeb3b",
+      "meta": {
+        "friendlyName": "Yellow, 500",
+        "sassVariable": "color-yellow--500",
+        "CSSCustomProperty": "--color-yellow--500",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellow600",
+      "value": "#fdd835",
+      "meta": {
+        "friendlyName": "Yellow, 600",
+        "sassVariable": "color-yellow--600",
+        "CSSCustomProperty": "--color-yellow--600",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellow700",
+      "value": "#fbc02d",
+      "meta": {
+        "friendlyName": "Yellow, 700",
+        "sassVariable": "color-yellow--700",
+        "CSSCustomProperty": "--color-yellow--700",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellow800",
+      "value": "#f9a825",
+      "meta": {
+        "friendlyName": "Yellow, 800",
+        "sassVariable": "color-yellow--800",
+        "CSSCustomProperty": "--color-yellow--800",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorYellow900",
+      "value": "#f57f17",
+      "meta": {
+        "friendlyName": "Yellow, 900",
+        "sassVariable": "color-yellow--900",
+        "CSSCustomProperty": "--color-yellow--900",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrange100",
+      "value": "#ffe0b2",
+      "meta": {
+        "friendlyName": "Orange, 100",
+        "sassVariable": "color-orange--100",
+        "CSSCustomProperty": "--color-orange--100",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrange200",
+      "value": "#ffcc80",
+      "meta": {
+        "friendlyName": "Orange, 200",
+        "sassVariable": "color-orange--200",
+        "CSSCustomProperty": "--color-orange--200",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrange300",
+      "value": "#ffb74d",
+      "meta": {
+        "friendlyName": "Orange, 300",
+        "sassVariable": "color-orange--300",
+        "CSSCustomProperty": "--color-orange--300",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrange400",
+      "value": "#ffa726",
+      "meta": {
+        "friendlyName": "Orange, 400",
+        "sassVariable": "color-orange--400",
+        "CSSCustomProperty": "--color-orange--400",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrange500",
+      "value": "#ff9800",
+      "meta": {
+        "friendlyName": "Orange, 500",
+        "sassVariable": "color-orange--500",
+        "CSSCustomProperty": "--color-orange--500",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrange600",
+      "value": "#fb8c00",
+      "meta": {
+        "friendlyName": "Orange, 600",
+        "sassVariable": "color-orange--600",
+        "CSSCustomProperty": "--color-orange--600",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrange700",
+      "value": "#f57c00",
+      "meta": {
+        "friendlyName": "Orange, 700",
+        "sassVariable": "color-orange--700",
+        "CSSCustomProperty": "--color-orange--700",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrange800",
+      "value": "#ef6c00",
+      "meta": {
+        "friendlyName": "Orange, 800",
+        "sassVariable": "color-orange--800",
+        "CSSCustomProperty": "--color-orange--800",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorOrange900",
+      "value": "#e65100",
+      "meta": {
+        "friendlyName": "Orange, 900",
+        "sassVariable": "color-orange--900",
+        "CSSCustomProperty": "--color-orange--900",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGrey100",
+      "value": "#f5f5f5",
+      "meta": {
+        "friendlyName": "Grey, 100",
+        "sassVariable": "color-grey--100",
+        "CSSCustomProperty": "--color-grey--100",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGrey200",
+      "value": "#eeeeee",
+      "meta": {
+        "friendlyName": "Grey, 200",
+        "sassVariable": "color-grey--200",
+        "CSSCustomProperty": "--color-grey--200",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGrey300",
+      "value": "#e0e0e0",
+      "meta": {
+        "friendlyName": "Grey, 300",
+        "sassVariable": "color-grey--300",
+        "CSSCustomProperty": "--color-grey--300",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGrey400",
+      "value": "#bdbdbd",
+      "meta": {
+        "friendlyName": "Grey, 400",
+        "sassVariable": "color-grey--400",
+        "CSSCustomProperty": "--color-grey--400",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGrey500",
+      "value": "#9e9e9e",
+      "meta": {
+        "friendlyName": "Grey, 500",
+        "sassVariable": "color-grey--500",
+        "CSSCustomProperty": "--color-grey--500",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGrey600",
+      "value": "#757575",
+      "meta": {
+        "friendlyName": "Grey, 600",
+        "sassVariable": "color-grey--600",
+        "CSSCustomProperty": "--color-grey--600",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGrey700",
+      "value": "#616161",
+      "meta": {
+        "friendlyName": "Grey, 700",
+        "sassVariable": "color-grey--700",
+        "CSSCustomProperty": "--color-grey--700",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGrey800",
+      "value": "#424242",
+      "meta": {
+        "friendlyName": "Grey, 800",
+        "sassVariable": "color-grey--800",
+        "CSSCustomProperty": "--color-grey--800",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorGrey900",
+      "value": "#212121",
+      "meta": {
+        "friendlyName": "Grey, 900",
+        "sassVariable": "color-grey--900",
+        "CSSCustomProperty": "--color-grey--900",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorBlack",
+      "value": "#000000",
+      "meta": {
+        "friendlyName": "Black",
+        "sassVariable": "color-black",
+        "CSSCustomProperty": "--color-black",
+        "comment": null
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "colorWhite",
+      "value": "#ffffff",
+      "meta": {
+        "friendlyName": "White",
+        "sassVariable": "color-white",
+        "CSSCustomProperty": "--color-white",
+        "comment": null
+      }
+    }
+  ]
+}

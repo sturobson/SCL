@@ -1,0 +1,7 @@
+aliases:
+  sans-serif: "'Open Sans', 'Segoe UI', Tahoma, sans-serif"
+  serif: "Baskerville,'Baskerville Old Face','Hoefler Text',Garamond,'Times New Roman',serif"
+
+global:
+  type: token
+  category: typography

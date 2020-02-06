@@ -1,0 +1,552 @@
+imports:
+  - "../aliases/palette.alias.yml"
+
+props:
+
+  # Red Colours
+  # ------------
+  - name: color-red--100
+    value: '{!color-red--100}'
+    meta:
+      friendlyName: Red, 100
+      sassVariable: color-red--100
+      CSSCustomProperty: --color-red--100
+      comment:
+  - name: color-red--200
+    value: '{!color-red--200}'
+    meta:
+      friendlyName: Red, 200
+      sassVariable: color-red--200
+      CSSCustomProperty: --color-red--200
+      comment:
+  - name: color-red--300
+    value: '{!color-red--300}'
+    meta:
+      friendlyName: Red, 300
+      sassVariable: color-red--300
+      CSSCustomProperty: --color-red--300
+      comment:
+  - name: color-red--400
+    value: '{!color-red--400}'
+    meta:
+      friendlyName: Red, 400
+      sassVariable: color-red--400
+      CSSCustomProperty: --color-red--400
+      comment:
+  - name: color-red--500
+    value: '{!color-red--500}'
+    meta:
+      friendlyName: Red, 500
+      sassVariable: color-red--500
+      CSSCustomProperty: --color-red--500
+      comment:
+  - name: color-red--600
+    value: '{!color-red--600}'
+    meta:
+      friendlyName: Red, 600
+      sassVariable: color-red--600
+      CSSCustomProperty: --color-red--600
+      comment:
+  - name: color-red--700
+    value: '{!color-red--700}'
+    meta:
+      friendlyName: Red, 700
+      sassVariable: color-red--700
+      CSSCustomProperty: --color-red--700
+      comment:
+  - name: color-red--800
+    value: '{!color-red--800}'
+    meta:
+      friendlyName: Red, 800
+      sassVariable: color-red--800
+      CSSCustomProperty: --color-red--800
+      comment:
+  - name: color-red--900
+    value: '{!color-red--900}'
+    meta:
+      friendlyName: Red, 900
+      sassVariable: color-red--900
+      CSSCustomProperty: --color-red--900
+      comment:
+
+  # Pink Colours
+  # -------------------
+  - name: color-pink--100
+    value: '{!color-pink--100}'
+    meta:
+      friendlyName: Pink, 100
+      sassVariable: color-pink--100
+      CSSCustomProperty: --color-pink--100
+      comment:
+  - name: color-pink--200
+    value: '{!color-pink--200}'
+    meta:
+      friendlyName: Pink, 200
+      sassVariable: color-pink--200
+      CSSCustomProperty: --color-pink--200
+      comment:
+  - name: color-pink--300
+    value: '{!color-pink--300}'
+    meta:
+      friendlyName: Pink, 300
+      sassVariable: color-pink--300
+      CSSCustomProperty: --color-pink--300
+      comment:
+  - name: color-pink--400
+    value: '{!color-pink--400}'
+    meta:
+      friendlyName: Pink, 400
+      sassVariable: color-pink--400
+      CSSCustomProperty: --color-pink--400
+      comment:
+  - name: color-pink--500
+    value: '{!color-pink--500}'
+    meta:
+      friendlyName: Pink, 500
+      sassVariable: color-pink--500
+      CSSCustomProperty: --color-pink--500
+      comment:
+  - name: color-pink--600
+    value: '{!color-pink--600}'
+    meta:
+      friendlyName: Pink, 600
+      sassVariable: color-pink--600
+      CSSCustomProperty: --color-pink--600
+      comment:
+  - name: color-pink--700
+    value: '{!color-pink--700}'
+    meta:
+      friendlyName: Pink, 700
+      sassVariable: color-pink--700
+      CSSCustomProperty: --color-pink--700
+      comment:
+  - name: color-pink--800
+    value: '{!color-pink--800}'
+    meta:
+      friendlyName: Pink, 800
+      sassVariable: color-pink--800
+      CSSCustomProperty: --color-pink--800
+      comment:
+  - name: color-pink--900
+    value: '{!color-pink--900}'
+    meta:
+      friendlyName: Pink, 900
+      sassVariable: color-pink--900
+      CSSCustomProperty: --color-pink--900
+      comment:
+
+  # Purple Colours
+  # -------------------
+  - name: color-purple--100
+    value: '{!color-purple--100}'
+    meta:
+      friendlyName: Purple, 100
+      sassVariable: color-purple--100
+      CSSCustomProperty: --color-purple--100
+      comment:
+  - name: color-purple--200
+    value: '{!color-purple--200}'
+    meta:
+      friendlyName: Purple, 200
+      sassVariable: color-purple--200
+      CSSCustomProperty: --color-purple--200
+      comment:
+  - name: color-purple--300
+    value: '{!color-purple--300}'
+    meta:
+      friendlyName: Purple, 300
+      sassVariable: color-purple--300
+      CSSCustomProperty: --color-purple--300
+      comment:
+  - name: color-purple--400
+    value: '{!color-purple--400}'
+    meta:
+      friendlyName: Purple, 400
+      sassVariable: color-purple--400
+      CSSCustomProperty: --color-purple--400
+      comment:
+  - name: color-purple--500
+    value: '{!color-purple--500}'
+    meta:
+      friendlyName: Purple, 500
+      sassVariable: color-purple--500
+      CSSCustomProperty: --color-purple--500
+      comment:
+  - name: color-purple--600
+    value: '{!color-purple--600}'
+    meta:
+      friendlyName: Purple, 600
+      sassVariable: color-purple--600
+      CSSCustomProperty: --color-purple--600
+      comment:
+  - name: color-purple--700
+    value: '{!color-purple--700}'
+    meta:
+      friendlyName: Purple, 700
+      sassVariable: color-purple--700
+      CSSCustomProperty: --color-purple--700
+      comment:
+  - name: color-purple--800
+    value: '{!color-purple--800}'
+    meta:
+      friendlyName: Purple, 800
+      sassVariable: color-purple--800
+      CSSCustomProperty: --color-purple--800
+      comment:
+  - name: color-purple--900
+    value: '{!color-purple--900}'
+    meta:
+      friendlyName: Purple, 900
+      sassVariable: color-purple--900
+      CSSCustomProperty: --color-purple--900
+      comment:
+
+  # Blue Colours
+  # -------------------
+  - name: color-blue--100
+    value: '{!color-blue--100}'
+    meta:
+      friendlyName: Blue, 100
+      sassVariable: color-blue--100
+      CSSCustomProperty: --color-blue--100
+      comment:
+  - name: color-blue--200
+    value: '{!color-blue--200}'
+    meta:
+      friendlyName: Blue, 200
+      sassVariable: color-blue--200
+      CSSCustomProperty: --color-blue--200
+      comment:
+  - name: color-blue--300
+    value: '{!color-blue--300}'
+    meta:
+      friendlyName: Blue, 300
+      sassVariable: color-blue--300
+      CSSCustomProperty: --color-blue--300
+      comment:
+  - name: color-blue--400
+    value: '{!color-blue--400}'
+    meta:
+      friendlyName: Blue, 400
+      sassVariable: color-blue--400
+      CSSCustomProperty: --color-blue--400
+      comment:
+  - name: color-blue--500
+    value: '{!color-blue--500}'
+    meta:
+      friendlyName: Blue, 500
+      sassVariable: color-blue--500
+      CSSCustomProperty: --color-blue--500
+      comment:
+  - name: color-blue--600
+    value: '{!color-blue--600}'
+    meta:
+      friendlyName: Blue, 600
+      sassVariable: color-blue--600
+      CSSCustomProperty: --color-blue--600
+      comment:
+  - name: color-blue--700
+    value: '{!color-blue--700}'
+    meta:
+      friendlyName: Blue, 700
+      sassVariable: color-blue--700
+      CSSCustomProperty: --color-blue--700
+      comment:
+  - name: color-blue--800
+    value: '{!color-blue--800}'
+    meta:
+      friendlyName: Blue, 800
+      sassVariable: color-blue--800
+      CSSCustomProperty: --color-blue--800
+      comment:
+  - name: color-blue--900
+    value: '{!color-blue--900}'
+    meta:
+      friendlyName: Blue, 900
+      sassVariable: color-blue--900
+      CSSCustomProperty: --color-blue--900
+      comment:
+
+  # Green Colours
+  # -------------------
+  - name: color-green--100
+    value: '{!color-green--100}'
+    meta:
+      friendlyName: Green, 100
+      sassVariable: color-green--100
+      CSSCustomProperty: --color-green--100
+      comment:
+  - name: color-green--200
+    value: '{!color-green--200}'
+    meta:
+      friendlyName: Green, 200
+      sassVariable: color-green--200
+      CSSCustomProperty: --color-green--200
+      comment:
+  - name: color-green--300
+    value: '{!color-green--300}'
+    meta:
+      friendlyName: Green, 300
+      sassVariable: color-green--300
+      CSSCustomProperty: --color-green--300
+      comment:
+  - name: color-green--400
+    value: '{!color-green--400}'
+    meta:
+      friendlyName: Green, 400
+      sassVariable: color-green--400
+      CSSCustomProperty: --color-green--400
+      comment:
+  - name: color-green--500
+    value: '{!color-green--500}'
+    meta:
+      friendlyName: Green, 500
+      sassVariable: color-green--500
+      CSSCustomProperty: --color-green--500
+      comment:
+  - name: color-green--600
+    value: '{!color-green--600}'
+    meta:
+      friendlyName: Green, 600
+      sassVariable: color-green--600
+      CSSCustomProperty: --color-green--600
+      comment:
+  - name: color-green--700
+    value: '{!color-green--700}'
+    meta:
+      friendlyName: Green, 700
+      sassVariable: color-green--700
+      CSSCustomProperty: --color-green--700
+      comment:
+  - name: color-green--800
+    value: '{!color-green--800}'
+    meta:
+      friendlyName: Green, 800
+      sassVariable: color-green--800
+      CSSCustomProperty: --color-green--800
+      comment:
+  - name: color-green--900
+    value: '{!color-green--900}'
+    meta:
+      friendlyName: Green, 900
+      sassVariable: color-green--900
+      CSSCustomProperty: --color-green--900
+      comment:
+
+  # Yellow Colours
+  # -------------------
+  - name: color-yellow--100
+    value: '{!color-yellow--100}'
+    meta:
+      friendlyName: Yellow, 100
+      sassVariable: color-yellow--100
+      CSSCustomProperty: --color-yellow--100
+      comment:
+  - name: color-yellow--200
+    value: '{!color-yellow--200}'
+    meta:
+      friendlyName: Yellow, 200
+      sassVariable: color-yellow--200
+      CSSCustomProperty: --color-yellow--200
+      comment:
+  - name: color-yellow--300
+    value: '{!color-yellow--300}'
+    meta:
+      friendlyName: Yellow, 300
+      sassVariable: color-yellow--300
+      CSSCustomProperty: --color-yellow--300
+      comment:
+  - name: color-yellow--400
+    value: '{!color-yellow--400}'
+    meta:
+      friendlyName: Yellow, 400
+      sassVariable: color-yellow--400
+      CSSCustomProperty: --color-yellow--400
+      comment:
+  - name: color-yellow--500
+    value: '{!color-yellow--500}'
+    meta:
+      friendlyName: Yellow, 500
+      sassVariable: color-yellow--500
+      CSSCustomProperty: --color-yellow--500
+      comment:
+  - name: color-yellow--600
+    value: '{!color-yellow--600}'
+    meta:
+      friendlyName: Yellow, 600
+      sassVariable: color-yellow--600
+      CSSCustomProperty: --color-yellow--600
+      comment:
+  - name: color-yellow--700
+    value: '{!color-yellow--700}'
+    meta:
+      friendlyName: Yellow, 700
+      sassVariable: color-yellow--700
+      CSSCustomProperty: --color-yellow--700
+      comment:
+  - name: color-yellow--800
+    value: '{!color-yellow--800}'
+    meta:
+      friendlyName: Yellow, 800
+      sassVariable: color-yellow--800
+      CSSCustomProperty: --color-yellow--800
+      comment:
+  - name: color-yellow--900
+    value: '{!color-yellow--900}'
+    meta:
+      friendlyName: Yellow, 900
+      sassVariable: color-yellow--900
+      CSSCustomProperty: --color-yellow--900
+      comment:
+
+  # Yellow Colours
+  # -------------------
+  - name: color-orange--100
+    value: '{!color-orange--100}'
+    meta:
+      friendlyName: Orange, 100
+      sassVariable: color-orange--100
+      CSSCustomProperty: --color-orange--100
+      comment:
+  - name: color-orange--200
+    value: '{!color-orange--200}'
+    meta:
+      friendlyName: Orange, 200
+      sassVariable: color-orange--200
+      CSSCustomProperty: --color-orange--200
+      comment:
+  - name: color-orange--300
+    value: '{!color-orange--300}'
+    meta:
+      friendlyName: Orange, 300
+      sassVariable: color-orange--300
+      CSSCustomProperty: --color-orange--300
+      comment:
+  - name: color-orange--400
+    value: '{!color-orange--400}'
+    meta:
+      friendlyName: Orange, 400
+      sassVariable: color-orange--400
+      CSSCustomProperty: --color-orange--400
+      comment:
+  - name: color-orange--500
+    value: '{!color-orange--500}'
+    meta:
+      friendlyName: Orange, 500
+      sassVariable: color-orange--500
+      CSSCustomProperty: --color-orange--500
+      comment:
+  - name: color-orange--600
+    value: '{!color-orange--600}'
+    meta:
+      friendlyName: Orange, 600
+      sassVariable: color-orange--600
+      CSSCustomProperty: --color-orange--600
+      comment:
+  - name: color-orange--700
+    value: '{!color-orange--700}'
+    meta:
+      friendlyName: Orange, 700
+      sassVariable: color-orange--700
+      CSSCustomProperty: --color-orange--700
+      comment:
+  - name: color-orange--800
+    value: '{!color-orange--800}'
+    meta:
+      friendlyName: Orange, 800
+      sassVariable: color-orange--800
+      CSSCustomProperty: --color-orange--800
+      comment:
+  - name: color-orange--900
+    value: '{!color-orange--900}'
+    meta:
+      friendlyName: Orange, 900
+      sassVariable: color-orange--900
+      CSSCustomProperty: --color-orange--900
+      comment:
+
+  # Green Colours
+  # -------------------
+  - name: color-grey--100
+    value: '{!color-grey--100}'
+    meta:
+      friendlyName: Grey, 100
+      sassVariable: color-grey--100
+      CSSCustomProperty: --color-grey--100
+      comment:
+  - name: color-grey--200
+    value: '{!color-grey--200}'
+    meta:
+      friendlyName: Grey, 200
+      sassVariable: color-grey--200
+      CSSCustomProperty: --color-grey--200
+      comment:
+  - name: color-grey--300
+    value: '{!color-grey--300}'
+    meta:
+      friendlyName: Grey, 300
+      sassVariable: color-grey--300
+      CSSCustomProperty: --color-grey--300
+      comment:
+  - name: color-grey--400
+    value: '{!color-grey--400}'
+    meta:
+      friendlyName: Grey, 400
+      sassVariable: color-grey--400
+      CSSCustomProperty: --color-grey--400
+      comment:
+  - name: color-grey--500
+    value: '{!color-grey--500}'
+    meta:
+      friendlyName: Grey, 500
+      sassVariable: color-grey--500
+      CSSCustomProperty: --color-grey--500
+      comment:
+  - name: color-grey--600
+    value: '{!color-grey--600}'
+    meta:
+      friendlyName: Grey, 600
+      sassVariable: color-grey--600
+      CSSCustomProperty: --color-grey--600
+      comment:
+  - name: color-grey--700
+    value: '{!color-grey--700}'
+    meta:
+      friendlyName: Grey, 700
+      sassVariable: color-grey--700
+      CSSCustomProperty: --color-grey--700
+      comment:
+  - name: color-grey--800
+    value: '{!color-grey--800}'
+    meta:
+      friendlyName: Grey, 800
+      sassVariable: color-grey--800
+      CSSCustomProperty: --color-grey--800
+      comment:
+  - name: color-grey--900
+    value: '{!color-grey--900}'
+    meta:
+      friendlyName: Grey, 900
+      sassVariable: color-grey--900
+      CSSCustomProperty: --color-grey--900
+      comment:
+
+  - name: color-black
+    value: '{!color-black}'
+    meta:
+      friendlyName: Black
+      sassVariable: color-black
+      CSSCustomProperty: --color-black
+      comment:
+
+  - name: color-white
+    value: '{!color-white}'
+    meta:
+      friendlyName: White
+      sassVariable: color-white
+      CSSCustomProperty: --color-white
+      comment:
+
+global:
+  type: color
+  category: color

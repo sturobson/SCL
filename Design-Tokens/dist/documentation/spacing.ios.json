@@ -1,0 +1,88 @@
+{
+  "properties": [
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacing0",
+      "value": "0",
+      "meta": {
+        "friendlyName": "Spacing, 0",
+        "sassVariable": "spacing--0",
+        "CSSCustomProperty": "--spacing--0",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingXs",
+      "value": ".25em",
+      "meta": {
+        "friendlyName": "Spacing, extra small",
+        "sassVariable": "spacing--xs",
+        "CSSCustomProperty": "--spacing--xs",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingS",
+      "value": ".5em",
+      "meta": {
+        "friendlyName": "Spacing, small",
+        "sassVariable": "spacing--s",
+        "CSSCustomProperty": "--spacing--s",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingR",
+      "value": "1rem",
+      "meta": {
+        "friendlyName": "Spacing, regular",
+        "sassVariable": "spacing--r",
+        "CSSCustomProperty": "--spacing--r",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingL",
+      "value": "1.25rem",
+      "meta": {
+        "friendlyName": "Spacing, large",
+        "sassVariable": "spacing--l",
+        "CSSCustomProperty": "--spacing--l",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingXl",
+      "value": "1.5rem",
+      "meta": {
+        "friendlyName": "Spacing, extra large",
+        "sassVariable": "spacing--xl",
+        "CSSCustomProperty": "--spacing--xl",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingXxl",
+      "value": "2rem",
+      "meta": {
+        "friendlyName": "Spacing, extra extra large",
+        "sassVariable": "spacing--xxl",
+        "CSSCustomProperty": "--spacing--xxl",
+        "comment": null
+      }
+    }
+  ]
+}

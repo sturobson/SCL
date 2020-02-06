@@ -1,0 +1,22 @@
+imports:
+  - "../aliases/opacity.alias.yml"
+
+props:
+
+  - name: opacity--overlay
+    value: '{!opacity--overlay}'
+    meta:
+      friendlyName: Opacity, Overlay
+      sassVariable: opacity--overlay
+      CSSCustomProperty: opacity--overlay
+
+  - name: opacity--disabled
+    value: '{!opacity--disabled}'
+    meta:
+      friendlyName: Opacity, Disabled
+      sassVariable: opacity--disabled
+      CSSCustomProperty: opacity--disabled
+
+global:
+  type: number
+  category: opacity

@@ -1,0 +1,13 @@
+// This file has been dynamically generated from design tokens
+// Please do NOT edit directly.
+
+// Source: ../design-tokens/global/duration.yml
+
+$duration-map: (
+  'duration-none': (0),
+  'duration-fast': (100ms),
+  'duration-base': (200ms),
+  'duration-slow': (300ms),
+  'duration-slowest': (500ms),
+  'duration-curve': (cubic-bezier(0.4, 0, 0.2, 1)),
+);
