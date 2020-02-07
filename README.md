@@ -7,8 +7,6 @@ setup
 
 - `cd SCL`
 
-
-
 (you might need sudo)
 
 install fractal
@@ -29,8 +27,17 @@ you might need gulp 4.0
 npm install gulpjs/gulp-cli -g
 ```
 
-running a dev build
+running a dev build:
 
 ```
 gulp dev
 ```
+
+to compile the Design Tokens:
+
+```
+gulp tokens
+```
+
+
+## Component Folder Structure

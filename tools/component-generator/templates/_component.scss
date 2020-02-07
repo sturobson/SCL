@@ -1,6 +1,7 @@
 // <%= componentName %>
 
 @import '<%= componentName %>.variables.scss';
+@import '<%= componentName %>.overrides.scss';
 
 .<%= componentName %> {
 
