@@ -1,0 +1,19 @@
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+@mixin set-type($font) {
+
+  font-size: map-deep-get($typography-map, $font, font-size);
+
+  @if map-deep-get($typography-map, $font, font-weight) == 400 {
+
+  }
+  @else {
+    font-weight: map-deep-get($typography-map, $font, font-weight);
+  }
+  line-height: map-deep-get($typography-map, $font, line-height);
+}

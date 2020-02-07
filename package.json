@@ -12,28 +12,36 @@
     "url": "https://github.com/sturobson/SCL/issues"
   },
   "dependencies": {
-    "@frctl/fractal": "^1.1.0",
-    "@frctl/handlebars-helpers": "^0.3.0",
-    "del": "^3.0.0",
-    "express": "^4.13.4",
+    "@frctl/fractal": "^1.2.0-beta.2",
+    "@frctl/nunjucks": "^2.0.1",
+    "chalk": "^2.4.2",
+    "del": "^4.0.0",
+    "express": "^4.16.4",
     "faker": "^4.1.0",
     "gulp": "^4.0.0",
-    "http-proxy": "^1.13.2",
-    "request-promise": "^4.2.2"
+    "http-proxy": "^1.17.0",
+    "request-promise": "^4.2.4",
+    "yeoman-generator": "^3.2.0",
+    "yosay": "^2.0.2"
   },
   "devDependencies": {
     "backstopjs": "^3.8.5",
     "browser-sync": "^2.7.10",
     "glob": "^7.1.1",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-connect": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-dart-sass": "^0.9.1",
     "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
     "gulp-replace-path": "^0.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sass-glob": "^1.0.5",
-    "gulp-serve": "^1.2.0",
-    "gulp-util": "^3.0.7",
-    "lerna": "^3.10.5"
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-serve": "^1.4.0",
+    "gulp-shell": "^0.7.1",
+    "gulp-theo": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "lerna": "^3.13.1",
+    "rename": "^1.0.4",
+    "theo": "^8.1.4"
   }
 }

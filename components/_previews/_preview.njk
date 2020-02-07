@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FOUC beater -->
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+  <link rel="stylesheet" href="{{ '/css/styles.css' | path }}">
+  <title>{{ _target.title }} | Simple Component Lubrary</title>
+  <style>
+
+  .scl-button--primary.scl-button--hover {
+    background-color: #90caf9;
+    color: #000000;
+  }
+
+  .scl-button--primary.scl-button--focus {
+    outline-offset: 2px;
+    outline: #2196f3 solid 2px;
+  }
+
+  .scl-button--secondary.scl-button--hover {
+    background-color: #b39ddb;
+    color: #FFFFFF;
+  }
+
+  .scl-button--secondary.scl-button--focus {
+    outline-offset: 2px;
+    outline: #673ab7 solid 2px;
+  }
+
+  .scl-button--tertiary.scl-button--hover {
+    background-color: #a5d6a7;
+    color: #000000;
+  }
+
+  .scl-button--tertiary.scl-button--focus {
+    outline-offset: 2px;
+    outline: #4caf50 solid 2px;
+  }
+
+  .scl-button--accent.scl-button--hover {
+    background-color: #ffcc80;
+    color: #000000;
+  }
+
+  .scl-button--accent.scl-button--focus {
+    outline-offset: 2px;
+    outline: #ff9800 solid 2px;
+  }
+
+  .scl-button--base.scl-button--hover {
+    background-color: #eeeeee;
+    color: #000000;
+  }
+
+  .scl-button--base.scl-button--focus {
+    outline-offset: 2px;
+    outline: #9e9e9e solid 2px;
+  }
+
+  .scl-button--active {
+    transform: translateY(1px);
+    position: relative;
+  }
+  </style>
+</head>
+<body>
+
+  {{ yield | safe }}
+
+
+</body>
+<script src="{{ '/javascript/scripts.js' | path }}"></script>
+</html>

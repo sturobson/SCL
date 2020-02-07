@@ -1,0 +1,35 @@
+// Sass Roll Up
+
+// Design Tokens
+
+// Custom Properties
+@import 'design-tokens/dist/sass/custom-properties/colors.custom-properties.scss';
+
+// Sass Maps
+@import 'design-tokens/dist/sass/maps/colors.map.scss';
+@import 'design-tokens/dist/sass/maps/typography.map.scss';
+
+// Sass Variables
+@import 'design-tokens/dist/sass/variables/colors.variables.scss';
+@import 'design-tokens/dist/sass/variables/duration.variables.scss';
+@import 'design-tokens/dist/sass/variables/border-radius.variables.scss';
+@import 'design-tokens/dist/sass/variables/opacity.variables.scss';
+@import 'design-tokens/dist/sass/variables/spacing.variables.scss';
+@import 'design-tokens/dist/sass/variables/font-family.variables.scss';
+
+// Import Mixins
+
+@import '_mixins.scss';
+
+// Components
+
+@import 'components/button/_button.scss';
+
+// Styles
+
+.scl-example {
+  margin: 0 32px 24px;
+  & > *:not(:first-of-type) {
+    margin-left: 12px;
+  }
+}

@@ -1,10 +1,3 @@
-.scl-example {
-  margin: 0 32px 24px;
-  & > *:not(:first-of-type) {
-    margin-left: 12px;
-  }
-}
-
 @import 'button.variables.scss';
 @import 'button.overides.scss';
 
@@ -23,12 +16,10 @@ button {
   @include set-type(body);
 
   color: $button-text-color-alt;
-
-
   background-color: $base-button-background-color;
   border: 1px solid $base-button-border-color;
   color: $button-text-color;
-
+  padding: $button-padding;
   transition: all linear $button-speed;
 
   &:hover,
@@ -37,7 +28,6 @@ button {
     color: $button-text-color-alt--hover;
   }
 
-  padding: $button-padding;
 
   &--small {
     padding: $button-padding--sm;
