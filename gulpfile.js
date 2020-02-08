@@ -56,7 +56,13 @@ ${theoSourceTokenLocation}
 {{#if prop.comment}}
 {{{trimLeft (indent (comment (trim prop.comment)))}}}
 {{/if}}
+{{# if prop.meta.customisable}}
 \${{prop.name}}: {{#eq prop.type "string"}}"{{/eq}}{{{prop.value}}}{{#eq prop.type "string"}}"{{/eq}} !default;
+--{{prop.name}}: {{#eq prop.type "string"}}"{{/eq}}{{{prop.value}}}{{#eq prop.type "string"}}"{{/eq}}; // This property can be customised
+
+{{else}}
+\${{prop.name}}: {{#eq prop.type "string"}}"{{/eq}}{{{prop.value}}}{{#eq prop.type "string"}}"{{/eq}} !default;
+{{/if}}
 {{/each}}
 `;
 
@@ -131,7 +137,7 @@ theo.registerTransform("web", ["color/hex"]);
 gulp.task('tokens:variables', () =>
   gulp.src('./design-tokens/components/*.yml')
     .pipe(theoG({
-      transform: { type: 'web' },
+      transform: { type: 'web', includeMeta: true },
       format: { type: 'scss' }
     }))
     .pipe(rename(function (path) {
@@ -262,7 +268,7 @@ gulp.task('watchJS', function(done) {
 });
 
 gulp.task('watchTokens', function(done) {
-  gulp.watch(['./design-tokens/theme/*.alias.yml', './design-tokens/components/*.yml'], gulp.series('tokens:variables')).on('change', reload);
+  gulp.watch(['./design-tokens/**/*'], gulp.series('tokens:variables')).on('change', reload);
   done();
 });
 

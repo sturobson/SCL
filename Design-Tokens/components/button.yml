@@ -12,18 +12,25 @@ props:
   # Colours
   - name: base-button-background-color
     value: '{!brand-base-color}'
-    comment: Base Colours
+    meta:
+      customisable: true
   - name: base-button-border-color
     value: '{!brand-base-color-dark}'
+    meta:
+      customisable: true
 
   # Hover Styles
   - name: base-button-background-color--hover
     value: '{!brand-base-color-light}'
+    meta:
+      customisable: true
+
   # Primary
 
   - name: primary-button-background-color
     value: '{!brand-primary-color}'
     comment: Primary Colours
+
   - name: primary-button-background-color--hover
     value: '{!brand-primary-color-light}'
 
@@ -36,6 +43,7 @@ props:
   - name: secondary-button-background-color
     value: '{!brand-secondary-color}'
     comment: Secondary Colours
+
   - name: secondary-button-border-color
     value: '{!brand-secondary-color-dark}'
 
